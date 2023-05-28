@@ -11,7 +11,8 @@ const Cabecalho = () => {
             <Image
               src="https://play-lh.googleusercontent.com/ygJ_iSQbDxlZt_LOvBjjouzUq6B-U1YCByeHteK2tSoqWm1zEDQYH14SYfcoi3WeVjA"
               style={{ height: 60, width: 60 }}
-            />
+            />{" "}
+            <strong style={{ fontFamily: "monospace" }}>BenDex</strong>
           </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/transformacoes">Transformações</Nav.Link>
