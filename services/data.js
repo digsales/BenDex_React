@@ -198,7 +198,8 @@ const data = {
         "Besta",
         "Massa Cinzenta",
       ],
-      imagem: "link_imagem_classico.jpg",
+      imagem:
+        "https://img.quizur.com/f/img632652f7dced58.62822370.jpg?lastEdited=1663455994",
     },
     {
       id: 2,
@@ -214,7 +215,8 @@ const data = {
         "Cromático",
         "Artrópode",
       ],
-      imagem: "link_imagem_forca_alienigena.jpg",
+      imagem:
+        "https://i.pinimg.com/originals/8d/8b/b0/8d8bb0502a28ab3e4b16a83805bcea77.jpg",
     },
     {
       id: 3,
@@ -230,7 +232,7 @@ const data = {
         "Jato de Água",
         "Eco Eco Supremo",
       ],
-      imagem: "link_imagem_Supremacia_alienigena.jpg",
+      imagem: "https://cdn.wallpapersafari.com/21/4/MPDXwo.jpg",
     },
     {
       id: 4,
@@ -247,7 +249,7 @@ const data = {
         "Enormossauro",
         "Friagem",
       ],
-      imagem: "link_imagem_Omniverse.jpg",
+      imagem: "https://images6.alphacoders.com/116/thumb-1920-1162645.png",
     },
   ],
 };
