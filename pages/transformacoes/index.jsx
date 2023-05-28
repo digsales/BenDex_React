@@ -31,6 +31,20 @@ const index = () => {
             </Card>
           </Col>
         ))}
+        <Col md={3} className="mb-4">
+          <Card className="mb-3" style={{ width: 262 }}>
+            <Card.Img
+              variant="top"
+              src="https://lojastalim.com.br/894-large_default/placa-decorativa-personalizada-sua-imagem-aqui.jpg"
+              style={{ width: 259, height: 259 }}
+            />
+            <Card.Body>
+              <Card.Title>Nome</Card.Title>
+              <Card.Text style={{ color: "grey" }}>Espécie</Card.Text>
+            </Card.Body>
+            <Button style={{ backgroundColor: "grey" }}>Adicionar</Button>
+          </Card>
+        </Col>
       </Row>
     </Pagina>
   );
