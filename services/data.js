@@ -113,7 +113,7 @@ const data = {
       nome: "Fogo Fátuo",
       raca: "Metanosiano",
       poderes:
-        "Pirocinese, fitocinese, regeneração, projeção de metano, gás adormecido, elasticidade, alongamento, imunidade ao fogo, força aprimorada",
+        "Pirocinese, fitocinese, regeneração, projeção de metano, gás adormecido, elasticidade, alongamento, imunidade ao fogo e força e resistência aprimorada",
       desenho: ["Força alienígena", "Supremacia alienígena", "Omniverse"],
       imagem:
         "https://i.pinimg.com/originals/f2/f7/c3/f2f7c350eed859713d944797326fbf10.jpg",
@@ -121,6 +121,19 @@ const data = {
         "Fogo Fátuo Supremo possui um esquema de cores azul e marrom escuro. Agora seu formato lembra uma árvore humanoide petrificada, e nas costas possui três grandes esferas contendo uma solução de querosene napalm de cor azul gelatinosa como confirmado por Dwayne McDuffie que Fogo Fátuo Supremo ascende uma chama três vezes mais quentes que Fogo Fátuo. Seu rosto lembra um pouco o de Chama, porém está coberto por uma dessas esferas, seus pés são semelhantes a sua versão original, seus braços são mais grossos e possuem três pequenas esferas em cada um. O Superomnitrix se localiza em seu peito.",
       supremoImagem:
         "https://4.bp.blogspot.com/-T9FOc_8cnxk/TePJaC7RX4I/AAAAAAAAA6s/gd-_w2XRCjs/s1600/03-Fogo_Selvagem_Supremo.png",
+    },
+    {
+      id: 12,
+      nome: "Gravattack",
+      raca: "Galileano",
+      poderes:
+        "Gravitocinese, geração de buracos negros, quasares e campos de orça, forma de planeta, levitação, força e resistência aprimorada e sobrevivência no espaço.",
+      desenho: ["Omniverse"],
+      imagem: "https://i.ebayimg.com/images/g/unwAAOSwvOdh5Vnr/s-l500.jpg",
+      supremo:
+        "Após a evolução, Gravattack perdeu suas pernas, e sua cabeça ficou mais arredondada, se assemelhando mais a um planeta. Seus picos estão bem maiores, assemelhando-se a estalagmites, e agora também tem picos em suas bochechas. Seu núcleo planetário fica em sua boca, tendo um interior preto e com espirais vermelhas. O símbolo evoluído do Superomnitrix tem 7 pontas, e está em seu queixo. Com sua forma descentralizada, Gravattack Supremo pode controlar a gravidade para manipular o peso dos objetos e movimento dos objetos, ou bate-los contra o chão com facilidade. Ele também pode fazer matéria ou energia ficar em torno dele. Seu poder gravitacional é tão grande que é capaz de criar um quasar. Ele possui três pequenos satélites que orbitam ele. Esses satélites também têm capacidade de manipular a gravidade.",
+      supremoImagem:
+        "https://i.pinimg.com/originals/2f/9d/9d/2f9d9dbcdefb9249d5f7a594c4c64136.png",
     },
   ],
   viloes: [
