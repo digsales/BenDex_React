@@ -18,7 +18,7 @@ const Detalhes = ({ index }) => {
   }
   return (
     <Pagina titulo={alien.nome}>
-      <Row style={{ marginBottom: 20 }}>
+      <Row style={{ marginBottom: 50 }}>
         <Col md={3}>
           <Card.Img variant="top" src={alien.imagem} />
         </Col>

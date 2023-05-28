@@ -58,6 +58,10 @@ const data = {
       desenho: ["Supremacia alienígena", "Omniverse"],
       imagem:
         "https://vignette.wikia.nocookie.net/ben10/images/7/78/Angry_Rath.png/revision/latest?cb=20130206073645",
+      supremo:
+        "Rath Supremo não teve nenhum grande poder especial muito diferenciado ao do Rath normal. Entretanto, ele está mais musculoso, o que significa um aprimoramento de sua força e resistência. Rath Supremo também mostrou uma velocidade e agilidade melhoradas quando perseguiu Luhley.",
+      supremoImagem:
+        "https://img.wattpad.com/2fc27b9a9c0edeb0ef2379242ce7ac3d1004dc06/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f506256595373334d62584c6634773d3d2d3930373934393534352e313631616237643963363166303232643538363135373235393136312e6a7067?s=fit&w=720&h=720",
     },
     {
       id: 7,
@@ -73,9 +77,13 @@ const data = {
       nome: "Massa Cinzenta",
       raca: "Galvaniano",
       poderes: "Inteligência avançada e habilidades de análise",
-      desenho: ["Supremacia alienígena"],
+      desenho: ["Clássico", "Supremacia alienígena", "Omniverse"],
       imagem:
         "https://i.pinimg.com/236x/b4/d1/50/b4d150fdc2467a030a4d4dede6685eec.jpg",
+      supremo:
+        "Massa Cinzenta Supremo tem uma inteligência altamente superior à de quase qualquer alien, tendo conhecimento de qualquer matéria em nível avançado. Se ele estiver perto de alguns equipamentos ele pode construir máquinas e por ora fala com grafia avançada como Artrópode Supremo. Ele pode controlar outros seres sendo orgânicos ou máquinas, encontrando um ponto essencial. Massa Cinzenta Supremo tem sido mostrado como capaz de detectar o ponto nervoso de alguém e entender línguas estrangeiras ou robóticas, como a de Pyxi. Assim como os Galvanianos em geral, ele também possui um pré cérebro com todas as funções corporais básicas.",
+      supremoImagem:
+        "https://pm1.narvii.com/7237/e03487af95f55fba89934279cfb5c7a6aa506809r1-440-511v2_00.jpg",
     },
     {
       id: 9,
@@ -109,6 +117,10 @@ const data = {
       desenho: ["Força alienígena", "Supremacia alienígena", "Omniverse"],
       imagem:
         "https://i.pinimg.com/originals/f2/f7/c3/f2f7c350eed859713d944797326fbf10.jpg",
+      supremo:
+        "Fogo Fátuo Supremo possui um esquema de cores azul e marrom escuro. Agora seu formato lembra uma árvore humanoide petrificada, e nas costas possui três grandes esferas contendo uma solução de querosene napalm de cor azul gelatinosa como confirmado por Dwayne McDuffie que Fogo Fátuo Supremo ascende uma chama três vezes mais quentes que Fogo Fátuo. Seu rosto lembra um pouco o de Chama, porém está coberto por uma dessas esferas, seus pés são semelhantes a sua versão original, seus braços são mais grossos e possuem três pequenas esferas em cada um. O Superomnitrix se localiza em seu peito.",
+      supremoImagem:
+        "https://4.bp.blogspot.com/-T9FOc_8cnxk/TePJaC7RX4I/AAAAAAAAA6s/gd-_w2XRCjs/s1600/03-Fogo_Selvagem_Supremo.png",
     },
   ],
   viloes: [
