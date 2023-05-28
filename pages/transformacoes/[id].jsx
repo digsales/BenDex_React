@@ -25,15 +25,17 @@ const Detalhes = ({ index }) => {
 
         <Col md={9}>
           <p>
-            <strong>Raça: </strong>
+            <strong style={{ fontSize: 18 }}>Raça: </strong>
+            <br />
             {alien.raca}
           </p>
           <p>
-            <strong>Habilidades: </strong>
+            <strong style={{ fontSize: 18 }}>Habilidades: </strong>
+            <br />
             {alien.poderes}
           </p>
           <div>
-            <strong>Aparições: </strong>
+            <strong style={{ fontSize: 18 }}>Aparições: </strong>
             <ul>
               {alien.desenho.map((item) => (
                 <li>{item}</li>
@@ -74,8 +76,9 @@ const Detalhes = ({ index }) => {
               <Card.Img variant="top" src={alien.supremoImagem} />
             </Col>
             <Col md={9}>
-              <h3>Supremo:</h3>
-              <p>{alien.supremo}</p>
+              <strong style={{ fontSize: 18 }}>Supremo: </strong>
+              <br />
+              {alien.supremo}
             </Col>
           </Row>
         </>

@@ -20,7 +20,7 @@ const data = {
       supremo:
         "Besta Suprema é significativamente maior e mais musculoso do que o Besta. Sua pele é de cor marrom avermelhado. Ele tem quatro enormes picos cinzas que começam como uma barbatana de tubarão na cabeça e seguem até o final das suas costas, afinando perto da garupa.",
       supremoImagem:
-        "https://img.quizur.com/f/img5f91176f6208f9.09699165.png?lastEdited=1603344247",
+        "https://www.heroisdatv.com/wp-content/uploads/2011/08/24Besta_Supremo.png",
     },
     {
       id: 3,
