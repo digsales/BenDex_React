@@ -17,7 +17,9 @@ const Pagina = (props) => {
         </Container>
       </div>
 
-      <Container style={{ marginBottom: 100 }}>{props.children}</Container>
+      <Container style={{ marginBottom: 100, marginTop: 50 }}>
+        {props.children}
+      </Container>
 
       <Rodape />
     </>

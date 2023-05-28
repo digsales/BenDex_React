@@ -43,15 +43,6 @@ const data = {
     },
     {
       id: 5,
-      nome: "Insectóide",
-      raca: "Lepidopterrano",
-      poderes: "Habilidades de um inseto, incluindo asas e espinhos afiados",
-      desenho: ["Clássico", "Supremacia alienígena", "Omniverse"],
-      imagem:
-        "https://15bac67be4.cbaul-cdnwnd.com/c1a100678181f7822d9e85f7ab30d732/200000044-0d6140e60b/download%20(4).jpg",
-    },
-    {
-      id: 6,
       nome: "Rath",
       raca: "Appoplexiano",
       poderes: "Habilidades de luta incríveis",
@@ -64,7 +55,7 @@ const data = {
         "https://img.wattpad.com/2fc27b9a9c0edeb0ef2379242ce7ac3d1004dc06/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f506256595373334d62584c6634773d3d2d3930373934393534352e313631616237643963363166303232643538363135373235393136312e6a7067?s=fit&w=720&h=720",
     },
     {
-      id: 7,
+      id: 6,
       nome: "Diamante",
       raca: "Petrosapien",
       poderes: "Criação e manipulação de cristais",
@@ -73,7 +64,7 @@ const data = {
         "https://pm1.aminoapps.com/6578/057baecf2878e4855f4aa34fca0f1f6d56697115_hq.jpg",
     },
     {
-      id: 8,
+      id: 7,
       nome: "Massa Cinzenta",
       raca: "Galvaniano",
       poderes: "Inteligência avançada e habilidades de análise",
@@ -86,7 +77,7 @@ const data = {
         "https://pm1.narvii.com/7237/e03487af95f55fba89934279cfb5c7a6aa506809r1-440-511v2_00.jpg",
     },
     {
-      id: 9,
+      id: 8,
       nome: "XLR8",
       raca: "Kinecelerano",
       poderes: "Super velocidade",
@@ -95,7 +86,7 @@ const data = {
         "https://i.pinimg.com/originals/89/26/0e/89260e3b1cb9d9655b7d250600114b03.jpg",
     },
     {
-      id: 10,
+      id: 9,
       nome: "Fantasmático",
       raca: "Ectonurita",
       poderes: "Intangibilidade e capacidade de possuir objetos",
@@ -109,7 +100,7 @@ const data = {
         "https://i.pinimg.com/736x/1a/58/90/1a58909d655730c554fc58d809a89350.jpg",
     },
     {
-      id: 11,
+      id: 10,
       nome: "Fogo Fátuo",
       raca: "Metanosiano",
       poderes:
@@ -123,7 +114,7 @@ const data = {
         "https://4.bp.blogspot.com/-T9FOc_8cnxk/TePJaC7RX4I/AAAAAAAAA6s/gd-_w2XRCjs/s1600/03-Fogo_Selvagem_Supremo.png",
     },
     {
-      id: 12,
+      id: 11,
       nome: "Gravattack",
       raca: "Galileano",
       poderes:
