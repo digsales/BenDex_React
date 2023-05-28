@@ -8,7 +8,7 @@ const index = () => {
   const desenhos = data.desenhos;
 
   return (
-    <Pagina titulo="Transformações">
+    <Pagina titulo="Desenhos">
       <Row className="mb-5">
         {desenhos.map((item) => (
           <Col key={item.id} md={3} className="mb-4">
@@ -16,7 +16,7 @@ const index = () => {
               <Card.Img
                 variant="top"
                 src={item.imagem}
-                style={{ width: 259, height: 259 }}
+                style={{ width: 259, height: 180 }}
               />
               <Card.Body>
                 <Card.Title>{item.nome}</Card.Title>
@@ -27,8 +27,8 @@ const index = () => {
                   {item.episodios} episódios
                 </Card.Text>
                 <div style={{ color: "grey" }}>
-                  <strong>Aparições: </strong>
-                  <ul>
+                  Aparições:
+                  <ul key={item.id}>
                     {item.aliens.map((item2) => (
                       <li style={{ color: "grey" }}>{item2}</li>
                     ))}
