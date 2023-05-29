@@ -10,8 +10,12 @@ const Cabecalho = () => {
           <Navbar.Brand href="/">
             <Image
               src="https://play-lh.googleusercontent.com/ygJ_iSQbDxlZt_LOvBjjouzUq6B-U1YCByeHteK2tSoqWm1zEDQYH14SYfcoi3WeVjA"
-              style={{ height: 60, width: 60 }}
+              style={{ height: 40, width: 40 }}
             />{" "}
+            {/* <Image
+              src="https://i.pinimg.com/originals/ce/ff/c8/ceffc80d7c8615086e6e56fd952862b2.png"
+              style={{ height: 40, width: 40 }}
+            />{" "} */}
             <strong style={{ fontFamily: "monospace" }}>BenDex</strong>
           </Navbar.Brand>
           <Nav className="me-auto">
