@@ -3,6 +3,7 @@ import Pagina from "../../components/Pagina";
 import "bootstrap/dist/css/bootstrap.min.css";
 import data from "@/services/data";
 import { Row, Col, Card, Button } from "react-bootstrap";
+import MeuCard from "@/components/MeuCard";
 
 const index = () => {
   const predadores = data.predadores;
@@ -12,7 +13,7 @@ const index = () => {
       <Row className="mb-5">
         {predadores.map((item) => (
           <Col key={item.id} md={3} className="mb-4">
-            <Card className="mb-3" style={{ width: 262 }}>
+            <MeuCard>
               <Card.Img
                 variant="top"
                 src={item.imagem}
@@ -30,7 +31,7 @@ const index = () => {
               >
                 Mais Informações
               </Button>
-            </Card>
+            </MeuCard>
           </Col>
         ))}
         <Col md={3} className="mb-4">
