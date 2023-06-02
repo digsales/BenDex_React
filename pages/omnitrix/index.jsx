@@ -16,7 +16,7 @@ const index = () => {
               <Card.Img
                 variant="top"
                 src={item.imagem}
-                style={{ width: 259, height: 180 }}
+                // style={{ width: 259, height: 180 }}
               />
               <Card.Body>
                 <Card.Title>{item.nome}</Card.Title>

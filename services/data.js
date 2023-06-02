@@ -4,25 +4,48 @@ const data = {
       id: 1,
       nome: "Omnitrix (Original)",
       imagem:
-        "https://static.wikia.nocookie.net/liberproeliis/images/e/e7/Omnitrix.png/revision/latest?cb=20180404235010&path-prefix=pt-br",
+        "https://i.pinimg.com/736x/8c/c0/8e/8cc08e4f57976bfea0bda72c0dec0c12.jpg",
       detalhes:
         "O Omnimatrix, mais conhecido como Omnitrix, era um dispositivo semelhante a um relógio que se prendia ao pulso de Ben Tennyson no início da série e é o dispositivo em torno do qual a franquia gira. O dispositivo é uma biblioteca portátil de dados genéticos intergalácticos que permite ao usuário alterar seu DNA à vontade e se transformar em uma variedade de diferentes espécies alienígenas, cada uma com suas próprias habilidades únicas.",
     },
     {
       id: 2,
-      nome: "Omnitrix (Original)",
+      nome: "Ultimatrix",
       imagem:
-        "https://static.wikia.nocookie.net/liberproeliis/images/e/e7/Omnitrix.png/revision/latest?cb=20180404235010&path-prefix=pt-br",
+        "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/04fd096e-205c-4c04-bdde-7ce9bc718319/da2vv28-25ae5b45-769c-429f-9764-8b1e6b912abc.png/v1/fill/w_729,h_578,q_80,strp/ultimatrix_by_thehawkdown_da2vv28-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc4IiwicGF0aCI6IlwvZlwvMDRmZDA5NmUtMjA1Yy00YzA0LWJkZGUtN2NlOWJjNzE4MzE5XC9kYTJ2djI4LTI1YWU1YjQ1LTc2OWMtNDI5Zi05NzY0LThiMWU2YjkxMmFiYy5wbmciLCJ3aWR0aCI6Ijw9NzI5In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.irN4N0zc8YQSr2LTFHpl-8CX7qp09rUCGRctYt3eHb0",
       detalhes:
-        "O Omnimatrix, mais conhecido como Omnitrix, era um dispositivo semelhante a um relógio que se prendia ao pulso de Ben Tennyson no início da série e é o dispositivo em torno do qual a franquia gira. O dispositivo é uma biblioteca portátil de dados genéticos intergalácticos que permite ao usuário alterar seu DNA à vontade e se transformar em uma variedade de diferentes espécies alienígenas, cada uma com suas próprias habilidades únicas.",
+        "O Ultimate Omnimatrix, conhecido como Ultimatrix, foi o dispositivo em que Ben 10: Ultimate Alien girou. Ben o usou para substituir o Omnitrix, que ele destruiu em uma batalha com Vilgax. O Ultimatrix foi removido por Azmuth em The Ultimate Enemy: Part 2 após a derrota de Dagon e substituído pelo novo Omnitrix.",
     },
     {
-      id: 2,
-      nome: "Omnitrix (Original)",
+      id: 3,
+      nome: "Omnitrix (Omniverse)",
       imagem:
-        "https://static.wikia.nocookie.net/liberproeliis/images/e/e7/Omnitrix.png/revision/latest?cb=20180404235010&path-prefix=pt-br",
+        "https://i.pinimg.com/originals/0c/a9/b9/0ca9b985ab2858b5fed65d0255ceee5f.png",
       detalhes:
-        "O Omnimatrix, mais conhecido como Omnitrix, era um dispositivo semelhante a um relógio que se prendia ao pulso de Ben Tennyson no início da série e é o dispositivo em torno do qual a franquia gira. O dispositivo é uma biblioteca portátil de dados genéticos intergalácticos que permite ao usuário alterar seu DNA à vontade e se transformar em uma variedade de diferentes espécies alienígenas, cada uma com suas próprias habilidades únicas.",
+        "O Omnimatrix, conhecido como Omnitrix, é uma das criações de Azmuth e é a versão finalizada do Omnitrix.",
+    },
+    {
+      id: 4,
+      nome: "Biomnitrix",
+      imagem: "https://3dmdb.com/previews/10930232.jpg",
+      detalhes:
+        "O Biomnitrix é o sistema dual-Omnitrix que Ben 10.000 desenvolve no futuro. Capaz de juntar DNAs de dois aliens e se tranformar em uma fusão deles, como Atomic-X, Fourmungousaur e Big Chuck.",
+    },
+    {
+      id: 5,
+      nome: "Nemetrix",
+      imagem:
+        "https://i.pinimg.com/originals/2b/7a/03/2b7a03f420a8f87b8cf1464080d0e30a.jpg",
+      detalhes:
+        "O Nemetrix é uma versão falsificada do Omnitrix original que foi criado pelo Dr. Psychobos. Khyber usou frequentemente com Zed e depois com seu Panuncian para transformá-los em espécies predatórias dos alienígenas do Omnitrix.",
+    },
+    {
+      id: 6,
+      nome: "Eunice",
+      imagem:
+        "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5ad19b86-b0b6-4a25-91c3-f2b9ef7db3c3/d9xwuwd-ecfde801-3752-44ac-99f4-d2db164edde7.jpg/v1/fill/w_1024,h_562,q_75,strp/ben_10_eunice_by_shashidhar90_d9xwuwd-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTYyIiwicGF0aCI6IlwvZlwvNWFkMTliODYtYjBiNi00YTI1LTkxYzMtZjJiOWVmN2RiM2MzXC9kOXh3dXdkLWVjZmRlODAxLTM3NTItNDRhYy05OWY0LWQyZGIxNjRlZGRlNy5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.OkcZgCynElnxvi1B7YaVkG0pxKchRg39JcWI4WEPmqk",
+      detalhes:
+        "O Unitrix, auto-apelidado de Eunice, é um protótipo do Omnitrix que pode absorver e conter DNA de várias espécies diferentes. Ela também é uma das criações de Azmuth.",
     },
   ],
   transformacoes: [
