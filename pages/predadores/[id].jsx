@@ -24,20 +24,24 @@ const Detalhes = ({ index }) => {
         </Col>
 
         <Col md={9}>
+          {predador.raca ? (
+            <p>
+              <strong style={{ fontSize: 18 }}>Raça: </strong>
+              <br />
+              {predador.raca}
+            </p>
+          ) : (
+            <></>
+          )}
           <p>
-            <strong style={{ fontSize: 18 }}>Raça: </strong>
+            <strong style={{ fontSize: 18 }}>Presa: </strong>
             <br />
-            {predador.raca}
+            {predador.presaNome} ({predador.presaRaca})
           </p>
           <p>
             <strong style={{ fontSize: 18 }}>Habilidades: </strong>
             <br />
             {predador.poderes}
-          </p>
-          <p>
-            <strong style={{ fontSize: 18 }}>Presa: </strong>
-            <br />
-            {predador.presaNome} ({predador.presaRaca})
           </p>
         </Col>
       </Row>

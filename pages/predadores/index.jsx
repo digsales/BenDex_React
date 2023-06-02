@@ -20,7 +20,9 @@ const index = () => {
               />
               <Card.Body>
                 <Card.Title>{item.nome}</Card.Title>
-                <Card.Text style={{ color: "grey" }}>{item.raca}</Card.Text>
+                <Card.Text style={{ color: "grey" }}>
+                  Presa: {item.presaNome}
+                </Card.Text>
               </Card.Body>
               <Button
                 style={{ backgroundColor: "green" }}

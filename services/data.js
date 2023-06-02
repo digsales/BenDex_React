@@ -206,7 +206,6 @@ const data = {
     {
       id: 2,
       nome: "Tyranópode",
-      raca: "Kaosseffexx Ultimasauria",
       poderes: "Super força e grande tamanho, formação de casulos, resustência",
       imagem:
         "https://static.wikia.nocookie.net/ben10/images/6/60/Jhgfdew3rtgfds.png/revision/latest?cb=20131021135129&path-prefix=pt",
@@ -218,7 +217,6 @@ const data = {
     {
       id: 3,
       nome: "Tyranópode",
-      raca: "Kaosseffexx Ultimasauria",
       poderes: "Super força e grande tamanho, formação de casulos, resustência",
       imagem:
         "https://static.wikia.nocookie.net/ben10/images/6/60/Jhgfdew3rtgfds.png/revision/latest?cb=20131021135129&path-prefix=pt",
