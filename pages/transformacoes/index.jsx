@@ -35,7 +35,7 @@ const index = () => {
           <Card className="mb-3" style={{ width: 262 }}>
             <Card.Img
               variant="top"
-              src="https://lojastalim.com.br/894-large_default/placa-decorativa-personalizada-sua-imagem-aqui.jpg"
+              src="https://static.vecteezy.com/ti/vetor-gratis/t1/4968473-upload-or-add-a-picture-jpg-file-concept-illustration-flat-design-vector-eps10-modern-graphic-element-for-landing-page-empty-state-ui-infographic-icon-etc-vetor.jpg"
               style={{ width: 259, height: 259 }}
             />
             <Card.Body>
