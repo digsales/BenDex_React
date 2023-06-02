@@ -127,6 +127,45 @@ const data = {
         "https://i.pinimg.com/originals/2f/9d/9d/2f9d9dbcdefb9249d5f7a594c4c64136.png",
     },
   ],
+  predadores: [
+    {
+      id: 1,
+      nome: "Tyranópode",
+      raca: "Kaosseffexx Ultimasauria",
+      poderes:
+        "Super força e grande tamanho, formação de casulos, resustência.",
+      imagem:
+        "https://i.pinimg.com/736x/3b/18/d6/3b18d65529d90d463c8ef18c72a661d1.jpg",
+      presaNome: "Enormossauro",
+      presaRaca: "Vaxasaurianos",
+      fraquezas:
+        "Como é tão grande, é um alvo fácil para seus inimigos, e também como foi mostrado em Predadores e Presas, Parte 2 ele não consegue enxergar muito bem criaturas pequenas, já que não conseguiu ver Massa Cinzenta. Além disto foi o único predador do Nemetrix que mostrou uma certa dificuldade para lutar contra sua presa que no caso era Enormossauro. Se um ser pequeno como Massa Cinzenta ou Nanomech, beliscar um certo ponto de pressão do predador, o mesmo cai e desmaia.",
+    },
+    {
+      id: 2,
+      nome: "Siridozer",
+      poderes:
+        "Super força, resistência aprimorada, chifres e espinhos, saliva anti-inflamável, agilidade, sobrevivência ao vácuo.",
+      imagem:
+        "https://i.pinimg.com/736x/71/09/37/7109374e2e3f59b5a5a3705ba76277fc.jpg",
+      presaNome: "Chama",
+      presaRaca: "Pyronitas",
+      fraquezas:
+        "Não mostrou ter tanta força, pois não conseguiu esmagar Macaco-Aranha em Quanto Mais as Coisas Mudam, Parte 1 e também não conseguiu esmagar Ben, em Predadores e Presas, Parte 2. Seus sentidos não são muito aguçados, por isso tem que ser guiado pela sua visão. Assim, quando seus olhos estão tapados, fica desorientado.",
+    },
+    {
+      id: 3,
+      nome: "Hipnótico",
+      raca: "Psycholeopterrano",
+      poderes: "Resistência a temperatudas, hipnose, intangibilidade.",
+      imagem:
+        "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/724f32c1-a5c4-4dd0-9170-40f6a4c4aa82/ddspg8o-1327a271-b7a0-4b47-848b-8dbad5b526f2.png/v1/fill/w_939,h_851/into_the_omniverse___hypnotick_by_rzgmon200_ddspg8o-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE2MCIsInBhdGgiOiJcL2ZcLzcyNGYzMmMxLWE1YzQtNGRkMC05MTcwLTQwZjZhNGM0YWE4MlwvZGRzcGc4by0xMzI3YTI3MS1iN2EwLTRiNDctODQ4Yi04ZGJhZDViNTI2ZjIucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.6DCxCIbjEMel4iP785qUYBMkLug95m7xGHQU5tHxMCs",
+      presaNome: "Friagem",
+      presaRaca: "Necrofriggianos",
+      fraquezas:
+        "Como visto em Malfeitor, óculos especiais podem evitar a hipnose dos Psycholeopterranos. Possivelmente Vulpimancers como Besta sejam imunes a hipnose por não possuírem olhos.",
+    },
+  ],
   viloes: [
     {
       id: 1,
@@ -188,45 +227,6 @@ const data = {
         "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/36acd9ba-d9e4-4ea1-9dba-f08e404c3999/d7q748m-1d54ed7f-a6bc-460f-b3ce-b90c7e44885b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM2YWNkOWJhLWQ5ZTQtNGVhMS05ZGJhLWYwOGU0MDRjMzk5OVwvZDdxNzQ4bS0xZDU0ZWQ3Zi1hNmJjLTQ2MGYtYjNjZS1iOTBjN2U0NDg4NWIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.PLWzsECEkTLXBb0q8wm0q1waPDdn8USdE6EQCE5Se54",
       plano:
         "Zs'Skayr, também conhecido como Fantasmático, é um vilão da série 'Ben 10' e é uma das formas alienígenas do Omnitrix. Ele é um Ectonurite, uma espécie de fantasmas alienígenas, e possui poderes relacionados à manipulação da matéria e à capacidade de se tornar intangível. O plano de Zs'Skayr varia ao longo da série, mas seu objetivo principal é espalhar o medo e dominar o mundo humano. Ele deseja transformar todos em criaturas de seu tipo e estabelecer um reinado de terror. Alguns dos planos em que Zs'Skayr esteve envolvido incluem: Possessão e controle: Zs'Skayr busca possuir pessoas e controlá-las para espalhar o medo e o caos. Ele usa sua habilidade de se tornar intangível para entrar nos corpos dos outros e assumir o controle sobre eles; exército de Fantasmas: Zs'Skayr tenta reunir outros Ectonurites para formar um exército de fantasmas. Seu objetivo é usar esse exército para subjugar a humanidade e estabelecer seu domínio sobre o mundo; rituais e artefatos mágicos: Em algumas ocasiões, Zs'Skayr pode buscar rituais mágicos ou artefatos que possam aumentar seu poder. Ele procura itens ou cerimônias que possam conceder-lhe habilidades adicionais ou ampliar seu controle sobre o reino dos fantasmas; vingança: Zs'Skayr pode procurar se vingar de Ben Tennyson e de outros que tenham cruzado seu caminho no passado. Seu plano pode envolver a busca por vingança e o desejo de eliminar seus inimigos. É importante ressaltar que os detalhes específicos do plano de Zs'Skayr podem variar dependendo da história em que ele está envolvido. Cada episódio ou arco da série pode apresentar diferentes objetivos e motivações para o personagem.",
-    },
-  ],
-  predadores: [
-    {
-      id: 1,
-      nome: "Tyranópode",
-      raca: "Kaosseffexx Ultimasauria",
-      poderes:
-        "Super força e grande tamanho, formação de casulos, resustência.",
-      imagem:
-        "https://i.pinimg.com/736x/3b/18/d6/3b18d65529d90d463c8ef18c72a661d1.jpg",
-      presaNome: "Enormossauro",
-      presaRaca: "Vaxasaurianos",
-      fraquezas:
-        "Como é tão grande, é um alvo fácil para seus inimigos, e também como foi mostrado em Predadores e Presas, Parte 2 ele não consegue enxergar muito bem criaturas pequenas, já que não conseguiu ver Massa Cinzenta. Além disto foi o único predador do Nemetrix que mostrou uma certa dificuldade para lutar contra sua presa que no caso era Enormossauro. Se um ser pequeno como Massa Cinzenta ou Nanomech, beliscar um certo ponto de pressão do predador, o mesmo cai e desmaia.",
-    },
-    {
-      id: 2,
-      nome: "Siridozer",
-      poderes:
-        "Super força, resistência aprimorada, chifres e espinhos, saliva anti-inflamável, agilidade, sobrevivência ao vácuo.",
-      imagem:
-        "https://i.pinimg.com/736x/71/09/37/7109374e2e3f59b5a5a3705ba76277fc.jpg",
-      presaNome: "Chama",
-      presaRaca: "Pyronitas",
-      fraquezas:
-        "Não mostrou ter tanta força, pois não conseguiu esmagar Macaco-Aranha em Quanto Mais as Coisas Mudam, Parte 1 e também não conseguiu esmagar Ben, em Predadores e Presas, Parte 2. Seus sentidos não são muito aguçados, por isso tem que ser guiado pela sua visão. Assim, quando seus olhos estão tapados, fica desorientado.",
-    },
-    {
-      id: 3,
-      nome: "Hipnótico",
-      raca: "Psycholeopterrano",
-      poderes: "Resistência a temperatudas, hipnose, intangibilidade.",
-      imagem:
-        "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/724f32c1-a5c4-4dd0-9170-40f6a4c4aa82/ddspg8o-1327a271-b7a0-4b47-848b-8dbad5b526f2.png/v1/fill/w_939,h_851/into_the_omniverse___hypnotick_by_rzgmon200_ddspg8o-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE2MCIsInBhdGgiOiJcL2ZcLzcyNGYzMmMxLWE1YzQtNGRkMC05MTcwLTQwZjZhNGM0YWE4MlwvZGRzcGc4by0xMzI3YTI3MS1iN2EwLTRiNDctODQ4Yi04ZGJhZDViNTI2ZjIucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.6DCxCIbjEMel4iP785qUYBMkLug95m7xGHQU5tHxMCs",
-      presaNome: "Friagem",
-      presaRaca: "Necrofriggianos",
-      fraquezas:
-        "Como visto em Malfeitor, óculos especiais podem evitar a hipnose dos Psycholeopterranos. Possivelmente Vulpimancers como Besta sejam imunes a hipnose por não possuírem olhos.",
     },
   ],
   desenhos: [
