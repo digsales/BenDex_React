@@ -190,6 +190,18 @@ const data = {
         "Zs'Skayr, também conhecido como Fantasmático, é um vilão da série 'Ben 10' e é uma das formas alienígenas do Omnitrix. Ele é um Ectonurite, uma espécie de fantasmas alienígenas, e possui poderes relacionados à manipulação da matéria e à capacidade de se tornar intangível. O plano de Zs'Skayr varia ao longo da série, mas seu objetivo principal é espalhar o medo e dominar o mundo humano. Ele deseja transformar todos em criaturas de seu tipo e estabelecer um reinado de terror. Alguns dos planos em que Zs'Skayr esteve envolvido incluem: Possessão e controle: Zs'Skayr busca possuir pessoas e controlá-las para espalhar o medo e o caos. Ele usa sua habilidade de se tornar intangível para entrar nos corpos dos outros e assumir o controle sobre eles; exército de Fantasmas: Zs'Skayr tenta reunir outros Ectonurites para formar um exército de fantasmas. Seu objetivo é usar esse exército para subjugar a humanidade e estabelecer seu domínio sobre o mundo; rituais e artefatos mágicos: Em algumas ocasiões, Zs'Skayr pode buscar rituais mágicos ou artefatos que possam aumentar seu poder. Ele procura itens ou cerimônias que possam conceder-lhe habilidades adicionais ou ampliar seu controle sobre o reino dos fantasmas; vingança: Zs'Skayr pode procurar se vingar de Ben Tennyson e de outros que tenham cruzado seu caminho no passado. Seu plano pode envolver a busca por vingança e o desejo de eliminar seus inimigos. É importante ressaltar que os detalhes específicos do plano de Zs'Skayr podem variar dependendo da história em que ele está envolvido. Cada episódio ou arco da série pode apresentar diferentes objetivos e motivações para o personagem.",
     },
   ],
+  predadores: [
+    {
+      id: 1,
+      nome: "Tyranópode",
+      raca: "Kaosseffexx Ultimasauria",
+      poderes: "Super força e grande tamanho, formação de casulos, resustência",
+      imagem:
+        "https://static.wikia.nocookie.net/ben10/images/6/60/Jhgfdew3rtgfds.png/revision/latest?cb=20131021135129&path-prefix=pt",
+      presaNome: "Enormossauro",
+      presaRaca: "Vaxasaurianos",
+    },
+  ],
   desenhos: [
     {
       id: 1,
