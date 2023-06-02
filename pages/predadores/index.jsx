@@ -35,7 +35,7 @@ const index = () => {
           </Col>
         ))}
         <Col md={3} className="mb-4">
-          <Card className="mb-3" style={{ width: 262 }}>
+          <MeuCard>
             <Card.Img
               variant="top"
               src="https://static.vecteezy.com/ti/vetor-gratis/t1/4968473-upload-or-add-a-picture-jpg-file-concept-illustration-flat-design-vector-eps10-modern-graphic-element-for-landing-page-empty-state-ui-infographic-icon-etc-vetor.jpg"
@@ -46,7 +46,7 @@ const index = () => {
               <Card.Text style={{ color: "grey" }}>Presa</Card.Text>
             </Card.Body>
             <Button style={{ backgroundColor: "grey" }}>Adicionar</Button>
-          </Card>
+          </MeuCard>
         </Col>
       </Row>
     </Pagina>
