@@ -3,6 +3,7 @@ import Pagina from "../../components/Pagina";
 import "bootstrap/dist/css/bootstrap.min.css";
 import data from "@/services/data";
 import { Row, Col, Card, Button } from "react-bootstrap";
+import MeuCard from "@/components/MeuCard";
 
 const index = () => {
   const transformacoes = data.transformacoes;
@@ -12,11 +13,11 @@ const index = () => {
       <Row className="mb-5">
         {transformacoes.map((item) => (
           <Col key={item.id} md={3} className="mb-4">
-            <Card className="mb-3" style={{ width: 262 }}>
+            <MeuCard>
               <Card.Img
                 variant="top"
                 src={item.imagem}
-                style={{ width: 259, height: 259 }}
+                style={{ height: 259, justifyContent: "center" }}
               />
               <Card.Body>
                 <Card.Title>{item.nome}</Card.Title>
@@ -28,7 +29,7 @@ const index = () => {
               >
                 Mais Informações
               </Button>
-            </Card>
+            </MeuCard>
           </Col>
         ))}
         <Col md={3} className="mb-4">
