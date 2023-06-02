@@ -1,4 +1,30 @@
 const data = {
+  omnitrix: [
+    {
+      id: 1,
+      nome: "Omnitrix (Original)",
+      imagem:
+        "https://static.wikia.nocookie.net/liberproeliis/images/e/e7/Omnitrix.png/revision/latest?cb=20180404235010&path-prefix=pt-br",
+      detalhes:
+        "O Omnimatrix, mais conhecido como Omnitrix, era um dispositivo semelhante a um relógio que se prendia ao pulso de Ben Tennyson no início da série e é o dispositivo em torno do qual a franquia gira. O dispositivo é uma biblioteca portátil de dados genéticos intergalácticos que permite ao usuário alterar seu DNA à vontade e se transformar em uma variedade de diferentes espécies alienígenas, cada uma com suas próprias habilidades únicas.",
+    },
+    {
+      id: 2,
+      nome: "Omnitrix (Original)",
+      imagem:
+        "https://static.wikia.nocookie.net/liberproeliis/images/e/e7/Omnitrix.png/revision/latest?cb=20180404235010&path-prefix=pt-br",
+      detalhes:
+        "O Omnimatrix, mais conhecido como Omnitrix, era um dispositivo semelhante a um relógio que se prendia ao pulso de Ben Tennyson no início da série e é o dispositivo em torno do qual a franquia gira. O dispositivo é uma biblioteca portátil de dados genéticos intergalácticos que permite ao usuário alterar seu DNA à vontade e se transformar em uma variedade de diferentes espécies alienígenas, cada uma com suas próprias habilidades únicas.",
+    },
+    {
+      id: 2,
+      nome: "Omnitrix (Original)",
+      imagem:
+        "https://static.wikia.nocookie.net/liberproeliis/images/e/e7/Omnitrix.png/revision/latest?cb=20180404235010&path-prefix=pt-br",
+      detalhes:
+        "O Omnimatrix, mais conhecido como Omnitrix, era um dispositivo semelhante a um relógio que se prendia ao pulso de Ben Tennyson no início da série e é o dispositivo em torno do qual a franquia gira. O dispositivo é uma biblioteca portátil de dados genéticos intergalácticos que permite ao usuário alterar seu DNA à vontade e se transformar em uma variedade de diferentes espécies alienígenas, cada uma com suas próprias habilidades únicas.",
+    },
+  ],
   transformacoes: [
     {
       id: 1,

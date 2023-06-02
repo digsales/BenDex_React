@@ -19,6 +19,7 @@ const Cabecalho = () => {
             <strong style={{ fontFamily: "monospace" }}>BenDex</strong>
           </Navbar.Brand>
           <Nav className="me-auto">
+            <Nav.Link href="/omnitrix">Omnitrix</Nav.Link>
             <Nav.Link href="/transformacoes">Transformações</Nav.Link>
             <Nav.Link href="/predadores">Predadores</Nav.Link>
             <Nav.Link href="/viloes">Vilões</Nav.Link>
