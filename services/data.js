@@ -195,9 +195,10 @@ const data = {
       id: 1,
       nome: "Tyranópode",
       raca: "Kaosseffexx Ultimasauria",
-      poderes: "Super força e grande tamanho, formação de casulos, resustência",
+      poderes:
+        "Super força e grande tamanho, formação de casulos, resustência.",
       imagem:
-        "https://images6.fanpop.com/image/photos/37100000/Tyrannopede-ben-10-omniverse-37172204-843-666.png",
+        "https://i.pinimg.com/736x/3b/18/d6/3b18d65529d90d463c8ef18c72a661d1.jpg",
       presaNome: "Enormossauro",
       presaRaca: "Vaxasaurianos",
       fraquezas:
@@ -205,25 +206,27 @@ const data = {
     },
     {
       id: 2,
-      nome: "Tyranópode",
-      poderes: "Super força e grande tamanho, formação de casulos, resustência",
+      nome: "Siridozer",
+      poderes:
+        "Super força, resistência aprimorada, chifres e espinhos, saliva anti-inflamável, agilidade, sobrevivência ao vácuo.",
       imagem:
-        "https://static.wikia.nocookie.net/ben10/images/6/60/Jhgfdew3rtgfds.png/revision/latest?cb=20131021135129&path-prefix=pt",
-      presaNome: "Enormossauro",
-      presaRaca: "Vaxasaurianos",
+        "https://i.pinimg.com/736x/71/09/37/7109374e2e3f59b5a5a3705ba76277fc.jpg",
+      presaNome: "Chama",
+      presaRaca: "Pyronitas",
       fraquezas:
-        "Como é tão grande, é um alvo fácil para seus inimigos, e também como foi mostrado em Predadores e Presas, Parte 2 ele não consegue enxergar muito bem criaturas pequenas, já que não conseguiu ver Massa Cinzenta. Além disto foi o único predador do Nemetrix que mostrou uma certa dificuldade para lutar contra sua presa que no caso era Enormossauro. Se um ser pequeno como Massa Cinzenta ou Nanomech, beliscar um certo ponto de pressão do predador, o mesmo cai e desmaia.",
+        "Não mostrou ter tanta força, pois não conseguiu esmagar Macaco-Aranha em Quanto Mais as Coisas Mudam, Parte 1 e também não conseguiu esmagar Ben, em Predadores e Presas, Parte 2. Seus sentidos não são muito aguçados, por isso tem que ser guiado pela sua visão. Assim, quando seus olhos estão tapados, fica desorientado.",
     },
     {
       id: 3,
-      nome: "Tyranópode",
-      poderes: "Super força e grande tamanho, formação de casulos, resustência",
+      nome: "Hipnótico",
+      raca: "Psycholeopterrano",
+      poderes: "Resistência a temperatudas, hipnose, intangibilidade.",
       imagem:
-        "https://static.wikia.nocookie.net/ben10/images/6/60/Jhgfdew3rtgfds.png/revision/latest?cb=20131021135129&path-prefix=pt",
-      presaNome: "Enormossauro",
-      presaRaca: "Vaxasaurianos",
+        "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/724f32c1-a5c4-4dd0-9170-40f6a4c4aa82/ddspg8o-1327a271-b7a0-4b47-848b-8dbad5b526f2.png/v1/fill/w_939,h_851/into_the_omniverse___hypnotick_by_rzgmon200_ddspg8o-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE2MCIsInBhdGgiOiJcL2ZcLzcyNGYzMmMxLWE1YzQtNGRkMC05MTcwLTQwZjZhNGM0YWE4MlwvZGRzcGc4by0xMzI3YTI3MS1iN2EwLTRiNDctODQ4Yi04ZGJhZDViNTI2ZjIucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.6DCxCIbjEMel4iP785qUYBMkLug95m7xGHQU5tHxMCs",
+      presaNome: "Friagem",
+      presaRaca: "Necrofriggianos",
       fraquezas:
-        "Como é tão grande, é um alvo fácil para seus inimigos, e também como foi mostrado em Predadores e Presas, Parte 2 ele não consegue enxergar muito bem criaturas pequenas, já que não conseguiu ver Massa Cinzenta. Além disto foi o único predador do Nemetrix que mostrou uma certa dificuldade para lutar contra sua presa que no caso era Enormossauro. Se um ser pequeno como Massa Cinzenta ou Nanomech, beliscar um certo ponto de pressão do predador, o mesmo cai e desmaia.",
+        "Como visto em Malfeitor, óculos especiais podem evitar a hipnose dos Psycholeopterranos. Possivelmente Vulpimancers como Besta sejam imunes a hipnose por não possuírem olhos.",
     },
   ],
   desenhos: [

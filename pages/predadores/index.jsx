@@ -8,7 +8,7 @@ const index = () => {
   const predadores = data.predadores;
 
   return (
-    <Pagina titulo="Transformações">
+    <Pagina titulo="Predadores">
       <Row className="mb-5">
         {predadores.map((item) => (
           <Col key={item.id} md={3} className="mb-4">
@@ -16,7 +16,7 @@ const index = () => {
               <Card.Img
                 variant="top"
                 src={item.imagem}
-                style={{ width: 259, height: 259 }}
+                // style={{ width: 259, height: 259 }}
               />
               <Card.Body>
                 <Card.Title>{item.nome}</Card.Title>
