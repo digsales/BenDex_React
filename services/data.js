@@ -197,9 +197,35 @@ const data = {
       raca: "Kaosseffexx Ultimasauria",
       poderes: "Super força e grande tamanho, formação de casulos, resustência",
       imagem:
+        "https://images6.fanpop.com/image/photos/37100000/Tyrannopede-ben-10-omniverse-37172204-843-666.png",
+      presaNome: "Enormossauro",
+      presaRaca: "Vaxasaurianos",
+      fraquezas:
+        "Como é tão grande, é um alvo fácil para seus inimigos, e também como foi mostrado em Predadores e Presas, Parte 2 ele não consegue enxergar muito bem criaturas pequenas, já que não conseguiu ver Massa Cinzenta. Além disto foi o único predador do Nemetrix que mostrou uma certa dificuldade para lutar contra sua presa que no caso era Enormossauro. Se um ser pequeno como Massa Cinzenta ou Nanomech, beliscar um certo ponto de pressão do predador, o mesmo cai e desmaia.",
+    },
+    {
+      id: 2,
+      nome: "Tyranópode",
+      raca: "Kaosseffexx Ultimasauria",
+      poderes: "Super força e grande tamanho, formação de casulos, resustência",
+      imagem:
         "https://static.wikia.nocookie.net/ben10/images/6/60/Jhgfdew3rtgfds.png/revision/latest?cb=20131021135129&path-prefix=pt",
       presaNome: "Enormossauro",
       presaRaca: "Vaxasaurianos",
+      fraquezas:
+        "Como é tão grande, é um alvo fácil para seus inimigos, e também como foi mostrado em Predadores e Presas, Parte 2 ele não consegue enxergar muito bem criaturas pequenas, já que não conseguiu ver Massa Cinzenta. Além disto foi o único predador do Nemetrix que mostrou uma certa dificuldade para lutar contra sua presa que no caso era Enormossauro. Se um ser pequeno como Massa Cinzenta ou Nanomech, beliscar um certo ponto de pressão do predador, o mesmo cai e desmaia.",
+    },
+    {
+      id: 3,
+      nome: "Tyranópode",
+      raca: "Kaosseffexx Ultimasauria",
+      poderes: "Super força e grande tamanho, formação de casulos, resustência",
+      imagem:
+        "https://static.wikia.nocookie.net/ben10/images/6/60/Jhgfdew3rtgfds.png/revision/latest?cb=20131021135129&path-prefix=pt",
+      presaNome: "Enormossauro",
+      presaRaca: "Vaxasaurianos",
+      fraquezas:
+        "Como é tão grande, é um alvo fácil para seus inimigos, e também como foi mostrado em Predadores e Presas, Parte 2 ele não consegue enxergar muito bem criaturas pequenas, já que não conseguiu ver Massa Cinzenta. Além disto foi o único predador do Nemetrix que mostrou uma certa dificuldade para lutar contra sua presa que no caso era Enormossauro. Se um ser pequeno como Massa Cinzenta ou Nanomech, beliscar um certo ponto de pressão do predador, o mesmo cai e desmaia.",
     },
   ],
   desenhos: [
