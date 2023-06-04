@@ -43,7 +43,12 @@ const index = () => {
               <Card.Title>Nome</Card.Title>
               <Card.Text style={{ color: "grey" }}>Espécie</Card.Text>
             </Card.Body>
-            <Button style={{ backgroundColor: "grey" }}>Adicionar</Button>
+            <Button
+              style={{ backgroundColor: "grey" }}
+              href="/transformacoes/form"
+            >
+              Adicionar
+            </Button>
           </MeuCard>
         </Col>
       </Row>
