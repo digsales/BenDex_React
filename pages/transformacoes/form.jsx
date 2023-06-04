@@ -22,7 +22,8 @@ const form = () => {
       "transformacoes",
       JSON.stringify(transformacoes)
     );
-    push("/transformacoes");
+    console.log(transformacoes);
+    data.transformacoes.push({ ...transformacoes });
   }
 
   return (
