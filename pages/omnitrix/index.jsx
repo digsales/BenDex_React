@@ -1,12 +1,24 @@
 import React, { useEffect, useState } from "react";
 import Pagina from "../../components/Pagina";
+import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import data from "@/services/data";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import MeuCard from "@/components/MeuCard";
 
 const index = () => {
-  const omnitrix = data.omnitrix;
+  // const omnitrix = data.omnitrix;
+  const [omnitrix, setOmnitrix] = useState([]);
+
+  useEffect(() => {
+    getAll();
+  }, []);
+
+  function getAll() {
+    axios.get("/api/omnitrix").then((res) => {
+      setOmnitrix(res.data);
+    });
+  }
 
   return (
     <Pagina titulo="Omnitrix">
