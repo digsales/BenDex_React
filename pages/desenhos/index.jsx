@@ -1,12 +1,25 @@
 import React, { useEffect, useState } from "react";
 import Pagina from "../../components/Pagina";
+import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import data from "@/services/data";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import MeuCard from "@/components/MeuCard";
 
 const index = () => {
-  const desenhos = data.desenhos;
+  // const desenhos = data.desenhos;
+
+  const [desenhos, setDesenhos] = useState([]);
+
+  useEffect(() => {
+    getAll();
+  }, []);
+
+  function getAll() {
+    axios.get("/api/desenhos").then((res) => {
+      setDesenhos(res.data);
+    });
+  }
 
   return (
     <Pagina titulo="Desenhos">
