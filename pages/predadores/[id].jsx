@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Pagina from "../../components/Pagina";
+import axios from "axios";
 import data from "@/services/data";
 import { Card, Col, Row } from "react-bootstrap";
 
 const Detalhes = ({ index }) => {
   const predadores = data.predadores;
+
+  // const [predadores, setPredadores] = useState([]);
+
+  // useEffect(() => {
+  //   getAll();
+  // }, []);
+
+  // function getAll() {
+  //   axios.get("/api/predadores").then((res) => {
+  //     setPredadores(res.data);
+  //   });
+  // }
+
   var i = 0;
   var predador = "";
   {
