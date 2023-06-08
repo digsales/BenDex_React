@@ -1,12 +1,24 @@
 import React, { useEffect, useState } from "react";
 import Pagina from "../../components/Pagina";
 import "bootstrap/dist/css/bootstrap.min.css";
+import axios from "axios";
 import data from "@/services/data";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import MeuCard from "@/components/MeuCard";
 
 const index = () => {
-  const transformacoes = data.transformacoes;
+  // const transformacoes = data.transformacoes;
+  const [transformacoes, setTransformacoes] = useState([]);
+
+  useEffect(() => {
+    getAll();
+  }, []);
+
+  function getAll() {
+    axios.get("/api/transformacoes").then((res) => {
+      setTransformacoes(res.data);
+    });
+  }
 
   return (
     <Pagina titulo="Transformações">

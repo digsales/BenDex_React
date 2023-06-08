@@ -1,12 +1,24 @@
 import React, { useEffect, useState } from "react";
 import Pagina from "../../components/Pagina";
+import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import data from "@/services/data";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import MeuCard from "@/components/MeuCard";
 
 const index = () => {
-  const predadores = data.predadores;
+  // const predadores = data.predadores;
+  const [predadores, setPredadores] = useState([]);
+
+  useEffect(() => {
+    getAll();
+  }, []);
+
+  function getAll() {
+    axios.get("/api/predadores").then((res) => {
+      setPredadores(res.data);
+    });
+  }
 
   return (
     <Pagina titulo="Predadores">
