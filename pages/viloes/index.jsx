@@ -2,11 +2,23 @@ import React, { useEffect, useState } from "react";
 import Pagina from "../../components/Pagina";
 import "bootstrap/dist/css/bootstrap.min.css";
 import data from "@/services/data";
+import axios from "axios";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import MeuCard from "@/components/MeuCard";
 
 const index = () => {
-  const viloes = data.viloes;
+  // const viloes = data.viloes;
+  const [viloes, setViloes] = useState([]);
+
+  useEffect(() => {
+    getAll();
+  }, []);
+
+  function getAll() {
+    axios.get("/api/viloes").then((res) => {
+      setViloes(res.data);
+    });
+  }
 
   return (
     <Pagina titulo="Vilões">
