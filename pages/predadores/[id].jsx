@@ -5,31 +5,20 @@ import data from "@/services/data";
 import { Card, Col, Row } from "react-bootstrap";
 
 const Detalhes = ({ index }) => {
-  const predadores = data.predadores;
+  // const predadores = data.predadores;
 
-  // const [predadores, setPredadores] = useState([]);
+  const [predador, setPredador] = useState([]);
 
-  // useEffect(() => {
-  //   getAll();
-  // }, []);
+  useEffect(() => {
+    getAll();
+  }, []);
 
-  // function getAll() {
-  //   axios.get("/api/predadores").then((res) => {
-  //     setPredadores(res.data);
-  //   });
-  // }
-
-  var i = 0;
-  var predador = "";
-  {
-    while (true) {
-      if (predadores[i].id == index) {
-        predador = predadores[i];
-        break;
-      }
-      i += 1;
-    }
+  function getAll() {
+    axios.get(`/api/predadores/${index}`).then((res) => {
+      setPredador(res.data);
+    });
   }
+
   return (
     <Pagina titulo={predador.nome}>
       <Row style={{ marginBottom: 50 }}>
