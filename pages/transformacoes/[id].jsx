@@ -2,20 +2,24 @@ import React from "react";
 import Pagina from "../../components/Pagina";
 import data from "@/services/data";
 import { Card, Col, Row } from "react-bootstrap";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const Detalhes = ({ index }) => {
-  const transformacoes = data.transformacoes;
-  var i = 0;
-  var alien = "";
-  {
-    while (true) {
-      if (transformacoes[i].id == index) {
-        alien = transformacoes[i];
-        break;
-      }
-      i += 1;
-    }
+  // const transformacoes = data.transformacoes;
+
+  const [alien, setAlien] = useState([]);
+
+  useEffect(() => {
+    getAll();
+  }, []);
+
+  function getAll() {
+    axios.get(`/api/transformacoes/${index}`).then((res) => {
+      setAlien(res.data);
+    });
   }
+
   return (
     <Pagina titulo={alien.nome}>
       <Row style={{ marginBottom: 50 }}>
@@ -37,7 +41,7 @@ const Detalhes = ({ index }) => {
           <div>
             <strong style={{ fontSize: 18 }}>Aparições: </strong>
             <ul>
-              {alien.desenho.map((item) => (
+              {alien.desenho?.map((item) => (
                 <li>{item}</li>
               ))}
             </ul>
