@@ -2,20 +2,24 @@ import React from "react";
 import Pagina from "../../components/Pagina";
 import data from "@/services/data";
 import { Card, Col, Row } from "react-bootstrap";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const Detalhes = ({ index }) => {
-  const vilao = data.viloes;
-  var i = 0;
-  var inimigo = "";
-  {
-    while (true) {
-      if (vilao[i].id == index) {
-        inimigo = vilao[i];
-        break;
-      }
-      i += 1;
-    }
+  // const vilao = data.viloes;
+
+  const [inimigo, setInimigo] = useState([]);
+
+  useEffect(() => {
+    getAll();
+  }, []);
+
+  function getAll() {
+    axios.get(`/api/viloes/${index}`).then((res) => {
+      setInimigo(res.data);
+    });
   }
+
   return (
     <Pagina titulo={inimigo.nome}>
       <Row style={{ marginBottom: 50 }}>
@@ -37,7 +41,7 @@ const Detalhes = ({ index }) => {
           <div>
             <strong style={{ fontSize: 18 }}>Aparições: </strong>
             <ul>
-              {inimigo.desenho.map((item) => (
+              {inimigo.desenho?.map((item) => (
                 <li>{item}</li>
               ))}
             </ul>
