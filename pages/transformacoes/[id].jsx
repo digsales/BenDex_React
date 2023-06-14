@@ -48,31 +48,6 @@ const Detalhes = ({ index }) => {
           </div>
         </Col>
       </Row>
-      {/* <h1 style={{ marginTop: 30 }}>
-        <strong>Elenco</strong>
-      </h1>
-      <br />
-      <Row>
-        {atores.map((ator) => (
-          <Col key={ator.id} md={3} className="my-3">
-            <Link
-              href={`../ator/${ator.id}`}
-              style={{ textDecoration: "none" }}
-              className="text-black"
-            >
-              <Card className="p-1">
-                <Card.Img
-                  variant="top"
-                  src={`https://image.tmdb.org/t/p/w500/${ator.profile_path}`}
-                />
-                <Card.Title>
-                  <em>{ator.name}</em>
-                </Card.Title>
-              </Card>
-            </Link>
-          </Col>
-        ))}
-      </Row> */}
       {alien.supremo ? (
         <>
           <Row>
