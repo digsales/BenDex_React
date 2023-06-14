@@ -1,10 +1,11 @@
 import Pagina from "@/components/Pagina";
-import React, { useState } from "react";
-import { Button, Form } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import { Button, Col, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import data from "@/services/data";
+import axios from "axios";
 
 const form = () => {
   const { push } = useRouter();
@@ -13,6 +14,18 @@ const form = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
+  const [desenhos, setDesenhos] = useState([]);
+
+  useEffect(() => {
+    getAll();
+  }, []);
+
+  function getAll() {
+    axios.get("/api/desenhos").then((res) => {
+      setDesenhos(res.data);
+    });
+  }
 
   function salvar(dados) {
     const transformacoes =
@@ -56,10 +69,14 @@ const form = () => {
           )}
         </Form.Group>
 
-        {/* <Form.Group className="mb-3" controlId="desenhos">
+        <Form.Group as={Col} controlId="desenhos">
           <Form.Label>Desenhos: </Form.Label>
-          <Form.Control type="text" {...register("desenhos")} />
-        </Form.Group> */}
+          <Form.Select defaultValue="..." {...register("desenho")}>
+            {desenhos?.map((item) => (
+              <option key={item.id}>{item.nome}</option>
+            ))}
+          </Form.Select>
+        </Form.Group>
 
         <Form.Group className="mb-3" controlId="imagem">
           <Form.Label>*Imagem: </Form.Label>
