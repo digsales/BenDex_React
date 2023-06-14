@@ -4,21 +4,39 @@ import data from "@/services/data";
 import { Card, Col, Row } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { useRouter } from "next/router";
 
 const Detalhes = ({ index }) => {
+  const { push, query } = useRouter();
   // const transformacoes = data.transformacoes;
 
   const [alien, setAlien] = useState([]);
 
   useEffect(() => {
-    getAll();
-  }, []);
+    if (query.id) {
+      axios.get(`/api/transformacoes/${query.id}`).then((res) => {
+        setAlien(res.data);
+      });
+    }
+  }, [query.id]);
 
-  function getAll() {
-    axios.get(`/api/transformacoes/${index}`).then((res) => {
-      setAlien(res.data);
-    });
-  }
+  const Aparicoes = (dados) => {
+    try {
+      return dados?.map((item) => <li>{item}</li>);
+    } catch {
+      return <li>{dados}</li>;
+    }
+  };
+
+  // useEffect(() => {
+  //   getAll();
+  // }, []);
+
+  // function getAll() {
+  //   axios.get(`/api/transformacoes/${index}`).then((res) => {
+  //     setAlien(res.data);
+  //   });
+  // }
 
   return (
     <Pagina titulo={alien.nome}>
@@ -40,11 +58,7 @@ const Detalhes = ({ index }) => {
           </p>
           <div>
             <strong style={{ fontSize: 18 }}>Aparições: </strong>
-            <ul>
-              {alien.desenho?.map((item) => (
-                <li>{item}</li>
-              ))}
-            </ul>
+            <ul>{Aparicoes(alien.desenho)}</ul>
           </div>
         </Col>
       </Row>

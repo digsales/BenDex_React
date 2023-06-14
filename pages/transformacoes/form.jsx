@@ -28,22 +28,15 @@ const form = () => {
   }
 
   function salvar(dados) {
-    const transformacoes =
-      JSON.parse(window.localStorage.getItem("transformacoes")) || [];
-    transformacoes.push(dados);
-    window.localStorage.setItem(
-      "transformacoes",
-      JSON.stringify(transformacoes)
-    );
-    console.log(transformacoes);
-    data.transformacoes.push({ ...transformacoes });
+    axios.post("/api/transformacoes", dados);
+    push("/transformacoes");
   }
 
   return (
     <Pagina titulo="Nova Transformação">
       <Form>
         <Form.Group className="mb-3" controlId="nome">
-          <Form.Label>*Nome: </Form.Label>
+          <Form.Label>Nome: </Form.Label>
           <Form.Control type="text" {...register("nome", { required: true })} />
           {errors.nome && (
             <Form.Text className="text-danger">Campo obrigatório.</Form.Text>
@@ -51,7 +44,7 @@ const form = () => {
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="raca">
-          <Form.Label>*Raça: </Form.Label>
+          <Form.Label>Raça: </Form.Label>
           <Form.Control type="text" {...register("raca", { required: true })} />
           {errors.nome && (
             <Form.Text className="text-danger">Campo obrigatório.</Form.Text>
@@ -59,7 +52,7 @@ const form = () => {
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="poderes">
-          <Form.Label>*Poderes: </Form.Label>
+          <Form.Label>Poderes: </Form.Label>
           <Form.Control
             type="text"
             {...register("poderes", { required: true })}
@@ -71,7 +64,8 @@ const form = () => {
 
         <Form.Group as={Col} controlId="desenhos">
           <Form.Label>Desenhos: </Form.Label>
-          <Form.Select defaultValue="..." {...register("desenho")}>
+          <Form.Select defaultValue="Selecione" {...register("desenho")}>
+            <option>Selecione</option>
             {desenhos?.map((item) => (
               <option key={item.id}>{item.nome}</option>
             ))}
@@ -79,7 +73,7 @@ const form = () => {
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="imagem">
-          <Form.Label>*Imagem: </Form.Label>
+          <Form.Label>Imagem: </Form.Label>
           <Form.Control
             type="text"
             {...register("imagem", { required: true })}
@@ -103,7 +97,7 @@ const form = () => {
           <Button variant="success" onClick={handleSubmit(salvar)}>
             Salvar
           </Button>
-          <Link className="ms-2 btn btn-danger" href="/cursos">
+          <Link className="ms-2 btn btn-danger" href="/transformacoes">
             Voltar
           </Link>
         </div>
