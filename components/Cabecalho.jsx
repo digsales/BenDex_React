@@ -9,7 +9,7 @@ const Cabecalho = () => {
         <Container>
           <Navbar.Brand href="/">
             <Image
-              src="https://play-lh.googleusercontent.com/ygJ_iSQbDxlZt_LOvBjjouzUq6B-U1YCByeHteK2tSoqWm1zEDQYH14SYfcoi3WeVjA"
+              src="https://i.pinimg.com/originals/59/41/73/594173036931a34e7952732d76b000c3.png"
               style={{ height: 40, width: 40 }}
             />{" "}
             {/* <Image
