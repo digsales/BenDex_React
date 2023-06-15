@@ -26,16 +26,6 @@ const Detalhes = ({ index }) => {
     push("/predadores");
   }
 
-  // useEffect(() => {
-  //   getAll();
-  // }, []);
-
-  // function getAll() {
-  //   axios.get(`/api/predadores/${index}`).then((res) => {
-  //     setPredador(res.data);
-  //   });
-  // }
-
   return (
     <Pagina titulo={predador.nome}>
       <Row style={{ marginBottom: 50 }}>
@@ -79,7 +69,7 @@ const Detalhes = ({ index }) => {
       <div className="text-center" style={{ marginTop: 50 }}>
         <Button
           variant="primary"
-          // onClick={handleSubmit(salvar)}
+          href={`/predadores/${query.id}/form`}
           style={{ marginRight: 50 }}
         >
           Editar

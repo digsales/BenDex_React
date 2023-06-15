@@ -30,7 +30,7 @@ const form = () => {
   }, [query.id]);
 
   function salvar(dados) {
-    axios.post("/api/predadores", dados);
+    axios.put(`/api/predadores/${query.id}`, dados);
     push("/predadores");
   }
 
