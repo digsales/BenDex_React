@@ -8,6 +8,7 @@ const MinhaArea = (props) => {
       style={{
         boxShadow: "0 17px 10px rgba(0, 0, 0, 0.3)",
         transition: "transform 0.3s ease",
+        padding: 10,
       }}
     >
       {props.children}

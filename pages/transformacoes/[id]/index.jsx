@@ -7,6 +7,7 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
+import MinhaArea from "@/components/MinhaArea";
 
 const Detalhes = ({ index }) => {
   const { push, query } = useRouter();
@@ -53,44 +54,85 @@ const Detalhes = ({ index }) => {
 
   return (
     <Pagina titulo={alien.nome}>
-      <Row style={{ marginBottom: 50 }}>
-        <Col md={3}>
-          <Card.Img variant="top" src={alien.imagem} />
+      <Row>
+        <Col style={{ marginBottom: 50 }}>
+          <MinhaArea>
+            {alien.supremo ? (
+              <Col>
+                <Col md={3}>
+                  <Card.Img
+                    variant="top"
+                    src={alien.imagem}
+                    style={{ marginBottom: 20, height: 300, width: "auto" }}
+                  />
+                </Col>
+                <Col md={9} className="align-text-bottom">
+                  <p>
+                    <strong style={{ fontSize: 18 }}>Raça: </strong>
+                    <br />
+                    {alien.raca}
+                  </p>
+                  <p>
+                    <strong style={{ fontSize: 18 }}>Habilidades: </strong>
+                    <br />
+                    {alien.poderes}
+                  </p>
+                  <div>
+                    <strong style={{ fontSize: 18 }}>Aparições: </strong>
+                    <ul>{Aparicoes(alien.desenho)}</ul>
+                  </div>
+                </Col>
+              </Col>
+            ) : (
+              <Row>
+                <Col md={3}>
+                  <Card.Img
+                    variant="top"
+                    src={alien.imagem}
+                    style={{ marginRight: 20, height: 300, width: "auto" }}
+                  />
+                </Col>
+                <Col md={9} className="align-text-bottom">
+                  <p>
+                    <strong style={{ fontSize: 18 }}>Raça: </strong>
+                    <br />
+                    {alien.raca}
+                  </p>
+                  <p>
+                    <strong style={{ fontSize: 18 }}>Habilidades: </strong>
+                    <br />
+                    {alien.poderes}
+                  </p>
+                  <div>
+                    <strong style={{ fontSize: 18 }}>Aparições: </strong>
+                    <ul>{Aparicoes(alien.desenho)}</ul>
+                  </div>
+                </Col>
+              </Row>
+            )}
+          </MinhaArea>
         </Col>
-
-        <Col md={9}>
-          <p>
-            <strong style={{ fontSize: 18 }}>Raça: </strong>
-            <br />
-            {alien.raca}
-          </p>
-          <p>
-            <strong style={{ fontSize: 18 }}>Habilidades: </strong>
-            <br />
-            {alien.poderes}
-          </p>
-          <div>
-            <strong style={{ fontSize: 18 }}>Aparições: </strong>
-            <ul>{Aparicoes(alien.desenho)}</ul>
-          </div>
-        </Col>
+        {alien.supremo ? (
+          <Col>
+            <MinhaArea>
+              <Col md={3}>
+                <Card.Img
+                  variant="top"
+                  src={alien.supremoImagem}
+                  style={{ marginBottom: 20, height: 300, width: "auto" }}
+                />
+              </Col>
+              <Col md={9}>
+                <strong style={{ fontSize: 18 }}>Supremo: </strong>
+                <br />
+                {alien.supremo}
+              </Col>
+            </MinhaArea>
+          </Col>
+        ) : (
+          ""
+        )}
       </Row>
-      {alien.supremo ? (
-        <>
-          <Row>
-            <Col md={3}>
-              <Card.Img variant="top" src={alien.supremoImagem} />
-            </Col>
-            <Col md={9}>
-              <strong style={{ fontSize: 18 }}>Supremo: </strong>
-              <br />
-              {alien.supremo}
-            </Col>
-          </Row>
-        </>
-      ) : (
-        ""
-      )}
       <div className="text-center" style={{ marginTop: 50 }}>
         <Button
           variant="primary"
