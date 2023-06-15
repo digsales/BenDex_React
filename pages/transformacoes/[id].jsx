@@ -1,16 +1,24 @@
 import React from "react";
 import Pagina from "../../components/Pagina";
 import data from "@/services/data";
-import { Card, Col, Row } from "react-bootstrap";
+import { Button, Card, Col, Row } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
+import Link from "next/link";
+import { useForm } from "react-hook-form";
 
 const Detalhes = ({ index }) => {
   const { push, query } = useRouter();
   // const transformacoes = data.transformacoes;
 
   const [alien, setAlien] = useState([]);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
   useEffect(() => {
     if (query.id) {
@@ -27,6 +35,11 @@ const Detalhes = ({ index }) => {
       return <li>{dados}</li>;
     }
   };
+
+  function excluir() {
+    axios.delete(`/api/transformacoes/${query.id}`);
+    push("/transformacoes");
+  }
 
   // useEffect(() => {
   //   getAll();
@@ -78,6 +91,18 @@ const Detalhes = ({ index }) => {
       ) : (
         ""
       )}
+      <div className="text-center" style={{ marginTop: 50 }}>
+        <Button
+          variant="primary"
+          // onClick={handleSubmit(salvar)}
+          style={{ marginRight: 50 }}
+        >
+          Editar
+        </Button>
+        <Button variant="danger" onClick={excluir}>
+          Excluir
+        </Button>
+      </div>
     </Pagina>
   );
 };
