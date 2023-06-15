@@ -63,7 +63,7 @@ const form = () => {
         </Form.Group>
 
         <Form.Group as={Col} controlId="desenhos">
-          <Form.Label>Desenhos: </Form.Label>
+          <Form.Label>Primeira aparição: </Form.Label>
           <Form.Select defaultValue="Selecione" {...register("desenho")}>
             <option>Selecione</option>
             {desenhos?.map((item) => (

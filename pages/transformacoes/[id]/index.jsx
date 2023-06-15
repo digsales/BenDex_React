@@ -94,7 +94,7 @@ const Detalhes = ({ index }) => {
       <div className="text-center" style={{ marginTop: 50 }}>
         <Button
           variant="primary"
-          // onClick={handleSubmit(salvar)}
+          href={`/transformacoes/${query.id}/form`}
           style={{ marginRight: 50 }}
         >
           Editar
