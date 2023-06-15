@@ -60,13 +60,17 @@ const Detalhes = ({ index }) => {
           </p>
         </Col>
       </Row>
-      <Row>
-        <p>
-          <strong style={{ fontSize: 18 }}>Fraquezas: </strong>
-          <br />
-          {predador.fraquezas}
-        </p>
-      </Row>
+      {predador.fraquezas ? (
+        <Row>
+          <p>
+            <strong style={{ fontSize: 18 }}>Fraquezas: </strong>
+            <br />
+            {predador.fraquezas}
+          </p>
+        </Row>
+      ) : (
+        <></>
+      )}
     </Pagina>
   );
 };
