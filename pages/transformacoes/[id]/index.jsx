@@ -1,5 +1,5 @@
 import React from "react";
-import Pagina from "../../components/Pagina";
+import Pagina from "../../../components/Pagina";
 import data from "@/services/data";
 import { Button, Card, Col, Row } from "react-bootstrap";
 import { useState, useEffect } from "react";

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Pagina from "../../components/Pagina";
+import Pagina from "../../../components/Pagina";
 import axios from "axios";
 import data from "@/services/data";
-import { Card, Col, Row } from "react-bootstrap";
+import { Button, Card, Col, Row } from "react-bootstrap";
 import { query } from "firebase/database";
 import { useRouter } from "next/router";
 
