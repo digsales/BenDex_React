@@ -3,21 +3,33 @@ import Pagina from "../../components/Pagina";
 import axios from "axios";
 import data from "@/services/data";
 import { Card, Col, Row } from "react-bootstrap";
+import { query } from "firebase/database";
+import { useRouter } from "next/router";
 
 const Detalhes = ({ index }) => {
   // const predadores = data.predadores;
 
+  const { push, query } = useRouter();
+
   const [predador, setPredador] = useState([]);
 
   useEffect(() => {
-    getAll();
-  }, []);
+    if (query.id) {
+      axios.get(`/api/predadores/${query.id}`).then((res) => {
+        setPredador(res.data);
+      });
+    }
+  }, [query.id]);
 
-  function getAll() {
-    axios.get(`/api/predadores/${index}`).then((res) => {
-      setPredador(res.data);
-    });
-  }
+  // useEffect(() => {
+  //   getAll();
+  // }, []);
+
+  // function getAll() {
+  //   axios.get(`/api/predadores/${index}`).then((res) => {
+  //     setPredador(res.data);
+  //   });
+  // }
 
   return (
     <Pagina titulo={predador.nome}>
