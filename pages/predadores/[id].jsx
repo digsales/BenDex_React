@@ -21,6 +21,11 @@ const Detalhes = ({ index }) => {
     }
   }, [query.id]);
 
+  function excluir() {
+    axios.delete(`/api/predadores/${query.id}`);
+    push("/predadores");
+  }
+
   // useEffect(() => {
   //   getAll();
   // }, []);
@@ -71,6 +76,18 @@ const Detalhes = ({ index }) => {
       ) : (
         <></>
       )}
+      <div className="text-center" style={{ marginTop: 50 }}>
+        <Button
+          variant="primary"
+          // onClick={handleSubmit(salvar)}
+          style={{ marginRight: 50 }}
+        >
+          Editar
+        </Button>
+        <Button variant="danger" onClick={excluir}>
+          Excluir
+        </Button>
+      </div>
     </Pagina>
   );
 };
