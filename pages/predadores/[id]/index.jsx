@@ -5,6 +5,7 @@ import data from "@/services/data";
 import { Button, Card, Col, Row } from "react-bootstrap";
 import { query } from "firebase/database";
 import { useRouter } from "next/router";
+import MinhaArea from "@/components/MinhaArea";
 
 const Detalhes = ({ index }) => {
   // const predadores = data.predadores;
@@ -28,44 +29,50 @@ const Detalhes = ({ index }) => {
 
   return (
     <Pagina titulo={predador.nome}>
-      <Row style={{ marginBottom: 50 }}>
-        <Col md={3}>
-          <Card.Img variant="top" src={predador.imagem} />
-        </Col>
+      <MinhaArea>
+        <Row style={{ marginBottom: 50 }}>
+          <Col md={3}>
+            <Card.Img
+              variant="top"
+              src={predador.imagem}
+              style={{ marginRight: 20 }}
+            />
+          </Col>
 
-        <Col md={9}>
-          {predador.raca ? (
+          <Col md={9}>
+            {predador.raca ? (
+              <p>
+                <strong style={{ fontSize: 18 }}>Raça: </strong>
+                <br />
+                {predador.raca}
+              </p>
+            ) : (
+              <></>
+            )}
             <p>
-              <strong style={{ fontSize: 18 }}>Raça: </strong>
+              <strong style={{ fontSize: 18 }}>Presa: </strong>
               <br />
-              {predador.raca}
+              {predador.presaNome} ({predador.presaRaca})
             </p>
-          ) : (
-            <></>
-          )}
-          <p>
-            <strong style={{ fontSize: 18 }}>Presa: </strong>
-            <br />
-            {predador.presaNome} ({predador.presaRaca})
-          </p>
-          <p>
-            <strong style={{ fontSize: 18 }}>Habilidades: </strong>
-            <br />
-            {predador.poderes}
-          </p>
-        </Col>
-      </Row>
-      {predador.fraquezas ? (
-        <Row>
-          <p>
-            <strong style={{ fontSize: 18 }}>Fraquezas: </strong>
-            <br />
-            {predador.fraquezas}
-          </p>
+            <p>
+              <strong style={{ fontSize: 18 }}>Habilidades: </strong>
+              <br />
+              {predador.poderes}
+            </p>
+          </Col>
         </Row>
-      ) : (
-        <></>
-      )}
+        {predador.fraquezas ? (
+          <Row>
+            <p>
+              <strong style={{ fontSize: 18 }}>Fraquezas: </strong>
+              <br />
+              {predador.fraquezas}
+            </p>
+          </Row>
+        ) : (
+          <></>
+        )}
+      </MinhaArea>
       <div className="text-center" style={{ marginTop: 50 }}>
         <Button
           variant="primary"
