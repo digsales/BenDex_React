@@ -24,19 +24,27 @@ const index = () => {
     <Pagina titulo="Omnitrix">
       <Row className="mb-5">
         {omnitrix.map((item) => (
-          <Col key={item.id} md={3} className="mb-4">
+          <Row key={item.id} className="mb-4">
             <MeuCard>
-              <Card.Img
-                variant="top"
-                src={item.imagem}
-                // style={{ width: 259, height: 180 }}
-              />
-              <Card.Body>
-                <Card.Title>{item.nome}</Card.Title>
-                <Card.Text style={{ color: "grey" }}>{item.detalhes}</Card.Text>
-              </Card.Body>
+              <Row>
+                <Col md={3}>
+                  <Card.Img
+                    variant="top"
+                    src={item.imagem}
+                    style={{ height: 200, width: "auto" }}
+                  />
+                </Col>
+                <Col>
+                  <Card.Body>
+                    <Card.Title>{item.nome}</Card.Title>
+                    <Card.Text style={{ color: "grey" }}>
+                      {item.detalhes}
+                    </Card.Text>
+                  </Card.Body>
+                </Col>
+              </Row>
             </MeuCard>
-          </Col>
+          </Row>
         ))}
       </Row>
     </Pagina>
