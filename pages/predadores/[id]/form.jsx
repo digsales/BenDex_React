@@ -104,7 +104,10 @@ const form = () => {
           <Button variant="success" onClick={handleSubmit(salvar)}>
             <FaSave color="white" size={14} /> Salvar
           </Button>
-          <Link className="ms-2 btn btn-danger" href="/predadores">
+          <Link
+            className="ms-2 btn btn-danger"
+            href={`/predadores/${query.id}`}
+          >
             <FaTimes color="white" size={14} /> Cancelar
           </Link>
         </div>
