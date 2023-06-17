@@ -136,7 +136,7 @@ const Detalhes = ({ index }) => {
       </Row>
       <div className="text-center" style={{ marginTop: 50 }}>
         <Button
-          variant="primary"
+          variant="success"
           href={`/transformacoes/${query.id}/form`}
           style={{ marginRight: 50 }}
         >
