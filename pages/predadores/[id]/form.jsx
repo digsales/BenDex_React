@@ -7,6 +7,7 @@ import Link from "next/link";
 import data from "@/services/data";
 import axios from "axios";
 import { query } from "firebase/database";
+import { FaSave, FaTimes } from "react-icons/fa";
 
 const form = () => {
   const { push, query } = useRouter();
@@ -101,10 +102,10 @@ const form = () => {
 
         <div className="text-center">
           <Button variant="success" onClick={handleSubmit(salvar)}>
-            Salvar
+            <FaSave color="white" size={14} /> Salvar
           </Button>
           <Link className="ms-2 btn btn-danger" href="/predadores">
-            Voltar
+            <FaTimes color="white" size={14} /> Cancelar
           </Link>
         </div>
       </Form>

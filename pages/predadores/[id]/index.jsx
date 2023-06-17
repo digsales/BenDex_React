@@ -6,6 +6,7 @@ import { Button, Card, Col, Row } from "react-bootstrap";
 import { query } from "firebase/database";
 import { useRouter } from "next/router";
 import MinhaArea from "@/components/MinhaArea";
+import { FaPencilAlt, FaTrashAlt } from "react-icons/fa";
 
 const Detalhes = ({ index }) => {
   // const predadores = data.predadores;
@@ -75,7 +76,7 @@ const Detalhes = ({ index }) => {
       </MinhaArea>
       <div className="text-center" style={{ marginTop: 50 }}>
         <Button
-          variant="primary"
+          variant="success"
           href={`/predadores/${query.id}/form`}
           style={{ marginRight: 50 }}
         >
