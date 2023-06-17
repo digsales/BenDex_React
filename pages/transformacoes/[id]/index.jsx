@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import MinhaArea from "@/components/MinhaArea";
+import { FaPencilAlt, FaTrashAlt } from "react-icons/fa";
 
 const Detalhes = ({ index }) => {
   const { push, query } = useRouter();
@@ -139,10 +140,10 @@ const Detalhes = ({ index }) => {
           href={`/transformacoes/${query.id}/form`}
           style={{ marginRight: 50 }}
         >
-          Editar
+          <FaPencilAlt color="white" size={14} /> Editar
         </Button>
         <Button variant="danger" onClick={excluir}>
-          Excluir
+          <FaTrashAlt color="white" size={14} /> Excluir
         </Button>
       </div>
     </Pagina>

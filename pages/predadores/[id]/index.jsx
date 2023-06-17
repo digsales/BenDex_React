@@ -79,10 +79,10 @@ const Detalhes = ({ index }) => {
           href={`/predadores/${query.id}/form`}
           style={{ marginRight: 50 }}
         >
-          Editar
+          <FaPencilAlt color="white" size={14} /> Editar
         </Button>
         <Button variant="danger" onClick={excluir}>
-          Excluir
+          <FaTrashAlt color="white" size={14} /> Excluir
         </Button>
       </div>
     </Pagina>
