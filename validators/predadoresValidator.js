@@ -20,6 +20,28 @@ const predadoresValidator = {
       message: "A quantidade de caracteres máxima é 50",
     },
   },
+  presaNome: {
+    required: "O campo é obrigatório",
+    minLength: {
+      value: 3,
+      message: "A quantidade de caracteres mínima é 3",
+    },
+    maxLength: {
+      value: 50,
+      message: "A quantidade de caracteres máxima é 50",
+    },
+  },
+  presaRaca: {
+    minLength: {
+      value: 3,
+      message: "A quantidade de caracteres mínima é 3",
+    },
+    maxLength: {
+      value: 50,
+      message: "A quantidade de caracteres máxima é 50",
+    },
+  },
+
   poderes: {
     required: "O campo é obrigatório",
     minLength: {

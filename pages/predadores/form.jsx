@@ -87,10 +87,10 @@ const form = () => {
           <Form.Label>Nome da presa: </Form.Label>
           <Form.Control
             type="text"
-            {...register("presaNome", { required: true })}
+            {...register("presaNome", predadoresValidator.presaNome)}
           />
-          {errors.nome && (
-            <Form.Text className="text-danger">Campo obrigatório.</Form.Text>
+          {errors.presaNome && (
+            <small className="text-danger">{errors.presaNome.message}</small>
           )}
         </Form.Group>
 
@@ -98,10 +98,10 @@ const form = () => {
           <Form.Label>Raça da Presa: </Form.Label>
           <Form.Control
             type="text"
-            {...register("presaRaca", { required: true })}
+            {...register("presaRaca", predadoresValidator.presaRaca)}
           />
-          {errors.nome && (
-            <Form.Text className="text-danger">Campo obrigatório.</Form.Text>
+          {errors.presaRaca && (
+            <small className="text-danger">{errors.presaRaca.message}</small>
           )}
         </Form.Group>
 
