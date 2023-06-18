@@ -55,7 +55,7 @@ const form = () => {
             onChange={handleChange}
           />
           {errors.cpf && (
-            <small className="text-danger">{errors.cpf.message}</small>
+            <Form.Text className="text-danger">{errors.cpf.message}</Form.Text>
           )}
         </Form.Group>
 
@@ -66,7 +66,7 @@ const form = () => {
             {...register("nome", transformacoesValidator.nome)}
           />
           {errors.nome && (
-            <small className="text-danger">{errors.nome.message}</small>
+            <Form.Text className="text-danger">{errors.nome.message}</Form.Text>
           )}
         </Form.Group>
 

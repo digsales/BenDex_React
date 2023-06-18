@@ -46,7 +46,7 @@ const form = () => {
             {...register("nome", predadoresValidator.nome)}
           />
           {errors.nome && (
-            <small className="text-danger">{errors.nome.message}</small>
+            <Form.Text className="text-danger">{errors.nome.message}</Form.Text>
           )}
         </Form.Group>
 
@@ -57,7 +57,7 @@ const form = () => {
             {...register("raca", predadoresValidator.raca)}
           />
           {errors.raca && (
-            <small className="text-danger">{errors.raca.message}</small>
+            <Form.Text className="text-danger">{errors.raca.message}</Form.Text>
           )}
         </Form.Group>
 

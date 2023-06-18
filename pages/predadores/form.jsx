@@ -44,7 +44,7 @@ const form = () => {
             {...register("nome", predadoresValidator.nome)}
           />
           {errors.nome && (
-            <small className="text-danger">{errors.nome.message}</small>
+            <Form.Text className="text-danger">{errors.nome.message}</Form.Text>
           )}
         </Form.Group>
 
@@ -55,7 +55,7 @@ const form = () => {
             {...register("raca", predadoresValidator.raca)}
           />
           {errors.raca && (
-            <small className="text-danger">{errors.raca.message}</small>
+            <Form.Text className="text-danger">{errors.raca.message}</Form.Text>
           )}
         </Form.Group>
 
@@ -90,7 +90,9 @@ const form = () => {
             {...register("presaNome", predadoresValidator.presaNome)}
           />
           {errors.presaNome && (
-            <small className="text-danger">{errors.presaNome.message}</small>
+            <Form.Text className="text-danger">
+              {errors.presaNome.message}
+            </Form.Text>
           )}
         </Form.Group>
 
@@ -101,7 +103,9 @@ const form = () => {
             {...register("presaRaca", predadoresValidator.presaRaca)}
           />
           {errors.presaRaca && (
-            <small className="text-danger">{errors.presaRaca.message}</small>
+            <Form.Text className="text-danger">
+              {errors.presaRaca.message}
+            </Form.Text>
           )}
         </Form.Group>
 
