@@ -8,12 +8,14 @@ import data from "@/services/data";
 import axios from "axios";
 import { FaSave, FaTimes } from "react-icons/fa";
 import transformacoesValidator from "@/validators/transformacoesValidator";
+import { mask } from "remask";
 
 const form = () => {
   const { push } = useRouter();
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors },
   } = useForm();
 
@@ -34,9 +36,29 @@ const form = () => {
     push("/transformacoes");
   }
 
+  function handleChange(event) {
+    const name = event.target.name;
+    const value = event.target.value;
+    const mascara = event.target.getAttribute("mask");
+    setValue(name, mask(value, mascara));
+  }
+
   return (
     <Pagina titulo="Nova Transformação">
       <Form>
+        <Form.Group className="mb-3" controlId="alienCpf">
+          <Form.Label>CPF (exemplo de máscara): </Form.Label>
+          <Form.Control
+            type="text"
+            mask="999.999.999-99"
+            {...register("alienCpf")}
+            onChange={handleChange}
+          />
+          {errors.cpf && (
+            <small className="text-danger">{errors.cpf.message}</small>
+          )}
+        </Form.Group>
+
         <Form.Group className="mb-3" controlId="nome">
           <Form.Label>Nome: </Form.Label>
           <Form.Control
