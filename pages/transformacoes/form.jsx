@@ -7,6 +7,7 @@ import Link from "next/link";
 import data from "@/services/data";
 import axios from "axios";
 import { FaSave, FaTimes } from "react-icons/fa";
+import transformacoesValidator from "@/validators/transformacoesValidator";
 
 const form = () => {
   const { push } = useRouter();
@@ -38,17 +39,23 @@ const form = () => {
       <Form>
         <Form.Group className="mb-3" controlId="nome">
           <Form.Label>Nome: </Form.Label>
-          <Form.Control type="text" {...register("nome", { required: true })} />
+          <Form.Control
+            type="text"
+            {...register("nome", transformacoesValidator.nome)}
+          />
           {errors.nome && (
-            <Form.Text className="text-danger">Campo obrigatório.</Form.Text>
+            <small className="text-danger">{errors.nome.message}</small>
           )}
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="raca">
           <Form.Label>Raça: </Form.Label>
-          <Form.Control type="text" {...register("raca", { required: true })} />
-          {errors.nome && (
-            <Form.Text className="text-danger">Campo obrigatório.</Form.Text>
+          <Form.Control
+            type="text"
+            {...register("raca", transformacoesValidator.raca)}
+          />
+          {errors.raca && (
+            <Form.Text className="text-danger">{errors.raca.message}</Form.Text>
           )}
         </Form.Group>
 
@@ -56,10 +63,12 @@ const form = () => {
           <Form.Label>Poderes: </Form.Label>
           <Form.Control
             type="text"
-            {...register("poderes", { required: true })}
+            {...register("poderes", transformacoesValidator.poderes)}
           />
-          {errors.nome && (
-            <Form.Text className="text-danger">Campo obrigatório.</Form.Text>
+          {errors.poderes && (
+            <Form.Text className="text-danger">
+              {errors.poderes.message}
+            </Form.Text>
           )}
         </Form.Group>
 
@@ -79,7 +88,7 @@ const form = () => {
             type="text"
             {...register("imagem", { required: true })}
           />
-          {errors.nome && (
+          {errors.imagem && (
             <Form.Text className="text-danger">Campo obrigatório.</Form.Text>
           )}
         </Form.Group>
