@@ -1,4 +1,4 @@
-### Ben Dex
+# Ben Dex
 Este é um projeto de uma enciclopédia interativa sobre o universo do Ben10, desenvolvida em ReactJS. A enciclopédia contém informações detalhadas sobre os transformações, predadores, vilões, desenhos e omnitrix presentes na série animada Ben10.
 
 ## Funcionalidades
