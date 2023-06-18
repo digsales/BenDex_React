@@ -1,4 +1,4 @@
-const transformacoesValidator = {
+const predadoresValidator = {
   nome: {
     required: "O campo é obrigatório",
     minLength: {
@@ -11,7 +11,6 @@ const transformacoesValidator = {
     },
   },
   raca: {
-    required: "O campo é obrigatório",
     minLength: {
       value: 3,
       message: "A quantidade de caracteres mínima é 3",
@@ -28,5 +27,11 @@ const transformacoesValidator = {
       message: "A quantidade de caracteres mínima é 10",
     },
   },
+  fraquezas: {
+    minLength: {
+      value: 10,
+      message: "A quantidade de caracteres mínima é 10",
+    },
+  },
 };
-export default transformacoesValidator;
+export default predadoresValidator;

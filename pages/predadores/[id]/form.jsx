@@ -8,6 +8,7 @@ import data from "@/services/data";
 import axios from "axios";
 import { query } from "firebase/database";
 import { FaSave, FaTimes } from "react-icons/fa";
+import predadoresValidator from "@/validators/predadoresValidator";
 
 const form = () => {
   const { push, query } = useRouter();
@@ -40,25 +41,36 @@ const form = () => {
       <Form>
         <Form.Group className="mb-3" controlId="nome">
           <Form.Label>Nome: </Form.Label>
-          <Form.Control type="text" {...register("nome", { required: true })} />
+          <Form.Control
+            type="text"
+            {...register("nome", predadoresValidator.nome)}
+          />
           {errors.nome && (
-            <Form.Text className="text-danger">Campo obrigatório.</Form.Text>
+            <small className="text-danger">{errors.nome.message}</small>
           )}
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="raca">
           <Form.Label>Raça: </Form.Label>
-          <Form.Control type="text" {...register("raca")} />
+          <Form.Control
+            type="text"
+            {...register("raca", predadoresValidator.raca)}
+          />
+          {errors.raca && (
+            <small className="text-danger">{errors.raca.message}</small>
+          )}
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="poderes">
           <Form.Label>Poderes: </Form.Label>
           <Form.Control
             type="text"
-            {...register("poderes", { required: true })}
+            {...register("poderes", predadoresValidator.poderes)}
           />
-          {errors.nome && (
-            <Form.Text className="text-danger">Campo obrigatório.</Form.Text>
+          {errors.poderes && (
+            <Form.Text className="text-danger">
+              {errors.poderes.message}
+            </Form.Text>
           )}
         </Form.Group>
 
@@ -97,7 +109,15 @@ const form = () => {
 
         <Form.Group className="mb-3" controlId="fraquezas">
           <Form.Label>Fraquezas: </Form.Label>
-          <Form.Control type="text" {...register("fraquezas")} />
+          <Form.Control
+            type="text"
+            {...register("fraquezas", predadoresValidator.fraquezas)}
+          />
+          {errors.fraquezas && (
+            <Form.Text className="text-danger">
+              {errors.fraquezas.message}
+            </Form.Text>
+          )}
         </Form.Group>
 
         <div className="text-center">
