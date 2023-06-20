@@ -1,6 +1,6 @@
 const predadoresValidator = {
   nome: {
-    required: "O campo é obrigatório",
+    required: "Campo obrigatório",
     minLength: {
       value: 3,
       message: "A quantidade de caracteres mínima é 3",
@@ -21,7 +21,7 @@ const predadoresValidator = {
     },
   },
   presaNome: {
-    required: "O campo é obrigatório",
+    required: "Campo obrigatório",
     minLength: {
       value: 3,
       message: "A quantidade de caracteres mínima é 3",
@@ -43,7 +43,7 @@ const predadoresValidator = {
   },
 
   poderes: {
-    required: "O campo é obrigatório",
+    required: "Campo obrigatório",
     minLength: {
       value: 10,
       message: "A quantidade de caracteres mínima é 10",

@@ -1,6 +1,6 @@
 const transformacoesValidator = {
   nome: {
-    required: "O campo é obrigatório",
+    required: "Campo obrigatório",
     minLength: {
       value: 3,
       message: "A quantidade de caracteres mínima é 3",
@@ -11,7 +11,7 @@ const transformacoesValidator = {
     },
   },
   raca: {
-    required: "O campo é obrigatório",
+    required: "Campo obrigatório",
     minLength: {
       value: 3,
       message: "A quantidade de caracteres mínima é 3",
@@ -22,7 +22,7 @@ const transformacoesValidator = {
     },
   },
   poderes: {
-    required: "O campo é obrigatório",
+    required: "Campo obrigatório",
     minLength: {
       value: 10,
       message: "A quantidade de caracteres mínima é 10",

@@ -64,6 +64,27 @@ const index = () => {
             </MeuCard>
           </Col>
         ))}
+        <Col md={3} className="mb-4">
+          <MeuCard>
+            <Card.Img
+              variant="top"
+              src="https://static.vecteezy.com/ti/vetor-gratis/t1/4968473-upload-or-add-a-picture-jpg-file-concept-illustration-flat-design-vector-eps10-modern-graphic-element-for-landing-page-empty-state-ui-infographic-icon-etc-vetor.jpg"
+              style={{ height: 259, justifyContent: "center" }}
+            />
+            <Card.Body>
+              <Card.Title>Nome</Card.Title>
+              <Card.Text style={{ color: "grey" }}>
+                *Quantidade* temporadas
+              </Card.Text>
+              <Card.Text style={{ color: "grey" }}>
+                *Quantidade* episódios
+              </Card.Text>
+            </Card.Body>
+            <Button style={{ backgroundColor: "grey" }} href="/desenhos/form">
+              Adicionar
+            </Button>
+          </MeuCard>
+        </Col>
       </Row>
     </Pagina>
   );
