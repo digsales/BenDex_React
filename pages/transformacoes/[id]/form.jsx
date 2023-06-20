@@ -40,8 +40,8 @@ const form = () => {
   }
 
   function salvar(dados) {
-    axios.post("/api/transformacoes", dados);
-    push("/transformacoes");
+    axios.put(`/api/transformacoes/${query.id}`, dados);
+    push(`/transformacoes/${query.id}`);
   }
 
   return (

@@ -10,14 +10,22 @@ const index = () => {
   // const desenhos = data.desenhos;
 
   const [desenhos, setDesenhos] = useState([]);
+  const [aliens, setAliens] = useState([]);
 
   useEffect(() => {
     getAll();
+    getAllAliens();
   }, []);
 
   function getAll() {
     axios.get("/api/desenhos").then((res) => {
       setDesenhos(res.data);
+    });
+  }
+
+  function getAllAliens() {
+    axios.get("/api/transformacoes").then((res) => {
+      setAliens(res.data);
     });
   }
 
@@ -41,11 +49,15 @@ const index = () => {
                   {item.episodios} episódios
                 </Card.Text>
                 <div style={{ color: "grey" }}>
-                  Aparições:
+                  Primeiras aparições:
                   <ul key={item.id}>
-                    {item.aliens.map((item2) => (
-                      <li style={{ color: "grey" }}>{item2}</li>
-                    ))}
+                    {aliens.map((item2) =>
+                      item2.desenho == item.nome ? (
+                        <li style={{ color: "grey" }}>{item2.nome}</li>
+                      ) : (
+                        <></>
+                      )
+                    )}
                   </ul>
                 </div>
               </Card.Body>

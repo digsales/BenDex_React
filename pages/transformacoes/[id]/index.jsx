@@ -79,7 +79,9 @@ const Detalhes = ({ index }) => {
                     {alien.poderes}
                   </p>
                   <div>
-                    <strong style={{ fontSize: 18 }}>Aparições: </strong>
+                    <strong style={{ fontSize: 18 }}>
+                      Primeria aparição:{" "}
+                    </strong>
                     <ul>{Aparicoes(alien.desenho)}</ul>
                   </div>
                 </Col>
@@ -105,7 +107,9 @@ const Detalhes = ({ index }) => {
                     {alien.poderes}
                   </p>
                   <div>
-                    <strong style={{ fontSize: 18 }}>Aparições: </strong>
+                    <strong style={{ fontSize: 18 }}>
+                      Primeira aparição:{" "}
+                    </strong>
                     <ul>{Aparicoes(alien.desenho)}</ul>
                   </div>
                 </Col>
