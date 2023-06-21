@@ -18,8 +18,6 @@ const form = () => {
     formState: { errors },
   } = useForm();
 
-  const [omnitrix, setOmnitrix] = useState([]);
-
   useEffect(() => {
     if (query.id) {
       axios.get(`/api/omnitrix/${query.id}`).then((res) => {
@@ -38,7 +36,7 @@ const form = () => {
   }
 
   return (
-    <Pagina titulo="Novo Desenho">
+    <Pagina titulo="Editar Omnitrix">
       <Form>
         <Form.Group className="mb-3" controlId="nome">
           <Form.Label>Nome: </Form.Label>
