@@ -44,7 +44,7 @@ const form = () => {
   }
 
   return (
-    <Pagina titulo="Nova Transformação">
+    <Pagina titulo="Nova Vilão">
       <Form>
         <Form.Group className="mb-3" controlId="nome">
           <Form.Label>Nome: </Form.Label>
