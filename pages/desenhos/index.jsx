@@ -134,7 +134,7 @@ const index = () => {
                 <Card.Img
                   variant="top"
                   src="https://static.vecteezy.com/ti/vetor-gratis/t1/4968473-upload-or-add-a-picture-jpg-file-concept-illustration-flat-design-vector-eps10-modern-graphic-element-for-landing-page-empty-state-ui-infographic-icon-etc-vetor.jpg"
-                  style={{ marginTop: 10, marginBottom: 10, height: 250 }}
+                  style={{ marginTop: 10, marginBottom: 10, height: 220 }}
                 />
               </Col>
               <Col>
