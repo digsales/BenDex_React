@@ -44,72 +44,111 @@ const index = () => {
     <Pagina titulo="Desenhos">
       <Row className="mb-5">
         {desenhos.map((item) => (
-          <Col key={item.id} md={3} className="mb-4">
+          <Row key={item.id} className="mb-4">
             <MeuCard>
-              <Card.Img
-                variant="top"
-                src={item.imagem}
-                // style={{ width: 259, height: 180 }}
-              />
-              <Card.Body>
-                <Card.Title>{item.nome}</Card.Title>
-                <Card.Text style={{ color: "grey" }}>
-                  {item.temporadas} temporadas
-                </Card.Text>
-                <Card.Text style={{ color: "grey" }}>
-                  {item.episodios} episódios
-                </Card.Text>
-                <div style={{ color: "grey" }}>
-                  Primeiras aparições:
-                  <ul key={item.id}>
-                    {aliens.map((item2) =>
-                      item2.desenho == item.nome ? (
-                        <li style={{ color: "grey" }}>{item2.nome}</li>
-                      ) : (
-                        <></>
-                      )
-                    )}
-                  </ul>
-                </div>
-                <Card.Footer>
-                  <Row>
-                    <Button
-                      variant="success"
-                      href={`/desenhos/${item.id}`}
-                      style={{ marginRight: 50 }}
-                    >
-                      <FaPencilAlt color="white" size={14} /> Editar
-                    </Button>
-                    <Button variant="danger" onClick={() => excluir(item.id)}>
-                      <FaTrashAlt color="white" size={14} /> Excluir
-                    </Button>
-                  </Row>
-                </Card.Footer>
-              </Card.Body>
+              <Row>
+                <Col md={4}>
+                  <Card.Img
+                    variant="top"
+                    src={item.imagem}
+                    style={{ marginTop: 10, marginBottom: 10 }}
+                  />
+                </Col>
+                <Col>
+                  <Card.Body>
+                    <Row>
+                      <Col>
+                        <Card.Title>{item.nome}</Card.Title>
+                        <Card.Text style={{ color: "grey" }}>
+                          {item.temporadas} temporadas
+                        </Card.Text>
+                        <Card.Text style={{ color: "grey" }}>
+                          {item.episodios} episódios
+                        </Card.Text>
+                      </Col>
+                      <Col>
+                        <div style={{ color: "grey" }}>
+                          Primeiras aparições:
+                          <ul key={item.id}>
+                            {aliens.map((item2) =>
+                              item2.desenho == item.nome ? (
+                                <li style={{ color: "grey" }}>{item2.nome}</li>
+                              ) : (
+                                <></>
+                              )
+                            )}
+                          </ul>
+                        </div>
+                      </Col>
+                      <Col>
+                        <Card.Footer>
+                          <Row>
+                            <Button
+                              variant="success"
+                              href={`/desenhos/${item.id}`}
+                              style={{ marginRight: 50 }}
+                            >
+                              <FaPencilAlt color="white" size={14} /> Editar
+                            </Button>
+                            <Button
+                              variant="danger"
+                              onClick={() => excluir(item.id)}
+                            >
+                              <FaTrashAlt color="white" size={14} /> Excluir
+                            </Button>
+                          </Row>
+                        </Card.Footer>
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                </Col>
+              </Row>
             </MeuCard>
-          </Col>
+          </Row>
         ))}
-        <Col md={3} className="mb-4">
+        <Row className="mb-4">
           <MeuCard>
-            <Card.Img
-              variant="top"
-              src="https://static.vecteezy.com/ti/vetor-gratis/t1/4968473-upload-or-add-a-picture-jpg-file-concept-illustration-flat-design-vector-eps10-modern-graphic-element-for-landing-page-empty-state-ui-infographic-icon-etc-vetor.jpg"
-              style={{ height: 259, justifyContent: "center" }}
-            />
-            <Card.Body>
-              <Card.Title>Nome</Card.Title>
-              <Card.Text style={{ color: "grey" }}>
-                *Quantidade* temporadas
-              </Card.Text>
-              <Card.Text style={{ color: "grey" }}>
-                *Quantidade* episódios
-              </Card.Text>
-            </Card.Body>
-            <Button style={{ backgroundColor: "grey" }} href="/desenhos/form">
-              Adicionar
-            </Button>
+            <Row>
+              <Col md={4}>
+                <Card.Img
+                  variant="top"
+                  src="https://static.vecteezy.com/ti/vetor-gratis/t1/4968473-upload-or-add-a-picture-jpg-file-concept-illustration-flat-design-vector-eps10-modern-graphic-element-for-landing-page-empty-state-ui-infographic-icon-etc-vetor.jpg"
+                  style={{ marginTop: 10, marginBottom: 10, height: 250 }}
+                />
+              </Col>
+              <Col>
+                <Card.Body>
+                  <Row>
+                    <Col>
+                      <Card.Title>Nome</Card.Title>
+                      <Card.Text style={{ color: "grey" }}>
+                        Quantidade de temporadas
+                      </Card.Text>
+                      <Card.Text style={{ color: "grey" }}>
+                        Quantidade de episódios
+                      </Card.Text>
+                    </Col>
+                    <Col>
+                      <div style={{ color: "grey" }}>Primeiras aparições:</div>
+                    </Col>
+                    <Col>
+                      <Card.Footer>
+                        <Row>
+                          <Button
+                            style={{ backgroundColor: "grey" }}
+                            href="/desenhos/form"
+                          >
+                            Adicionar
+                          </Button>
+                        </Row>
+                      </Card.Footer>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Col>
+            </Row>
           </MeuCard>
-        </Col>
+        </Row>
       </Row>
     </Pagina>
   );
