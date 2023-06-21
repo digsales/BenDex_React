@@ -32,6 +32,14 @@ const Detalhes = ({ index }) => {
     push("/viloes");
   }
 
+  const Aparicoes = (dados) => {
+    try {
+      return dados?.map((item) => <li>{item}</li>);
+    } catch {
+      return <li>{dados}</li>;
+    }
+  };
+
   return (
     <Pagina titulo={inimigo.nome}>
       <MinhaArea>
@@ -53,11 +61,7 @@ const Detalhes = ({ index }) => {
             </p>
             <div>
               <strong style={{ fontSize: 18 }}>Aparições: </strong>
-              <ul>
-                {inimigo.desenho?.map((item) => (
-                  <li>{item}</li>
-                ))}
-              </ul>
+              <ul>{Aparicoes(inimigo.desenho)}</ul>
             </div>
           </Col>
         </Row>
