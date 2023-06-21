@@ -5,9 +5,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import data from "@/services/data";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import MeuCard from "@/components/MeuCard";
+import { FaPencilAlt, FaTrashAlt } from "react-icons/fa";
+import { query } from "firebase/database";
+import { useRouter } from "next/router";
 
 const index = () => {
   // const desenhos = data.desenhos;
+  const { push, query } = useRouter();
 
   const [desenhos, setDesenhos] = useState([]);
   const [aliens, setAliens] = useState([]);
@@ -27,6 +31,13 @@ const index = () => {
     axios.get("/api/transformacoes").then((res) => {
       setAliens(res.data);
     });
+  }
+
+  function excluir(item) {
+    if (confirm("Voce tem certeza?")) {
+      axios.delete(`/api/desenhos/${item}`);
+    }
+    push("/desenhos");
   }
 
   return (
@@ -60,6 +71,20 @@ const index = () => {
                     )}
                   </ul>
                 </div>
+                <Card.Footer>
+                  <Row>
+                    <Button
+                      variant="success"
+                      href={`/desenhos/${item.id}`}
+                      style={{ marginRight: 50 }}
+                    >
+                      <FaPencilAlt color="white" size={14} /> Editar
+                    </Button>
+                    <Button variant="danger" onClick={() => excluir(item.id)}>
+                      <FaTrashAlt color="white" size={14} /> Excluir
+                    </Button>
+                  </Row>
+                </Card.Footer>
               </Card.Body>
             </MeuCard>
           </Col>
