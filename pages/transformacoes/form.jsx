@@ -59,6 +59,19 @@ const form = () => {
           )}
         </Form.Group>
 
+        <Form.Group className="mb-3" controlId="alienTelefone">
+          <Form.Label>Telefone (exemplo de máscara): </Form.Label>
+          <Form.Control
+            type="tel"
+            mask="(99) 99999-9999"
+            {...register("alienTelefone")}
+            onChange={handleChange}
+          />
+          {errors.cpf && (
+            <Form.Text className="text-danger">{errors.cpf.message}</Form.Text>
+          )}
+        </Form.Group>
+
         <Form.Group className="mb-3" controlId="nome">
           <Form.Label>Nome: </Form.Label>
           <Form.Control
