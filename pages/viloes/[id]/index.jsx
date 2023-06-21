@@ -60,7 +60,7 @@ const Detalhes = ({ index }) => {
               {inimigo.poderes}
             </p>
             <div>
-              <strong style={{ fontSize: 18 }}>Aparições: </strong>
+              <strong style={{ fontSize: 18 }}>Primeira aparição: </strong>
               <ul>{Aparicoes(inimigo.desenho)}</ul>
             </div>
           </Col>
