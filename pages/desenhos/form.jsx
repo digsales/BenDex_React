@@ -7,7 +7,7 @@ import Link from "next/link";
 import data from "@/services/data";
 import axios from "axios";
 import { FaSave, FaTimes } from "react-icons/fa";
-import predadoresValidator from "@/validators/predadoresValidator";
+import desenhosValidator from "@/validators/desenhosValidator";
 
 const form = () => {
   const { push } = useRouter();
@@ -41,7 +41,7 @@ const form = () => {
           <Form.Label>Nome: </Form.Label>
           <Form.Control
             type="text"
-            {...register("nome", predadoresValidator.nome)}
+            {...register("nome", desenhosValidator.nome)}
           />
           {errors.nome && (
             <Form.Text className="text-danger">{errors.nome.message}</Form.Text>
