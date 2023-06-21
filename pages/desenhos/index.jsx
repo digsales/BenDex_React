@@ -15,10 +15,12 @@ const index = () => {
 
   const [desenhos, setDesenhos] = useState([]);
   const [aliens, setAliens] = useState([]);
+  const [viloes, setViloes] = useState([]);
 
   useEffect(() => {
     getAll();
     getAllAliens();
+    getAllViloes();
   }, []);
 
   function getAll() {
@@ -30,6 +32,11 @@ const index = () => {
   function getAllAliens() {
     axios.get("/api/transformacoes").then((res) => {
       setAliens(res.data);
+    });
+  }
+  function getAllViloes() {
+    axios.get("/api/viloes").then((res) => {
+      setViloes(res.data);
     });
   }
 
@@ -68,9 +75,23 @@ const index = () => {
                       </Col>
                       <Col>
                         <div style={{ color: "grey" }}>
-                          Primeiras aparições:
+                          Primeiras aparições de transformações:
                           <ul key={item.id}>
                             {aliens.map((item2) =>
+                              item2.desenho == item.nome ? (
+                                <li style={{ color: "grey" }}>{item2.nome}</li>
+                              ) : (
+                                <></>
+                              )
+                            )}
+                          </ul>
+                        </div>
+                      </Col>
+                      <Col>
+                        <div style={{ color: "grey" }}>
+                          Primeiras aparições de vilões:
+                          <ul key={item.id}>
+                            {viloes.map((item2) =>
                               item2.desenho == item.nome ? (
                                 <li style={{ color: "grey" }}>{item2.nome}</li>
                               ) : (
@@ -129,7 +150,14 @@ const index = () => {
                       </Card.Text>
                     </Col>
                     <Col>
-                      <div style={{ color: "grey" }}>Primeiras aparições:</div>
+                      <div style={{ color: "grey" }}>
+                        Primeiras aparições de transformações:
+                      </div>
+                    </Col>
+                    <Col>
+                      <div style={{ color: "grey" }}>
+                        Primeiras aparições de vilões:
+                      </div>
                     </Col>
                     <Col>
                       <Card.Footer>
