@@ -6,10 +6,12 @@ import data from "@/services/data";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import MeuCard from "@/components/MeuCard";
 import { FaPencilAlt, FaTrashAlt } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 const index = () => {
   // const omnitrix = data.omnitrix;
   const [omnitrix, setOmnitrix] = useState([]);
+  const { push } = useRouter();
 
   useEffect(() => {
     getAll();
