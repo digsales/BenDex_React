@@ -34,7 +34,7 @@ const index = () => {
   }
 
   function excluir(item) {
-    if (confirm("Voce tem certeza?")) {
+    if (confirm("Você tem certeza?")) {
       axios.delete(`/api/desenhos/${item}`);
     }
     push("/desenhos");

@@ -1,12 +1,16 @@
 import React from "react";
-import Pagina from "../../components/Pagina";
+import Pagina from "../../../components/Pagina";
 import data from "@/services/data";
-import { Card, Col, Row } from "react-bootstrap";
+import { Button, Card, Col, Row } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import MinhaArea from "@/components/MinhaArea";
+import { FaPencilAlt, FaTrashAlt } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 const Detalhes = ({ index }) => {
+  const { push, query } = useRouter();
+
   // const vilao = data.viloes;
 
   const [inimigo, setInimigo] = useState([]);
@@ -19,6 +23,13 @@ const Detalhes = ({ index }) => {
     axios.get(`/api/viloes/${index}`).then((res) => {
       setInimigo(res.data);
     });
+  }
+
+  function excluir() {
+    if (confirm("Você tem certeza?")) {
+      axios.delete(`/api/viloes/${query.id}`);
+    }
+    push("/viloes");
   }
 
   return (
@@ -56,6 +67,18 @@ const Detalhes = ({ index }) => {
           {inimigo.plano}
         </p>
       </MinhaArea>
+      <div className="text-center" style={{ marginTop: 50 }}>
+        <Button
+          variant="success"
+          href={`/viloes/${query.id}/form`}
+          style={{ marginRight: 50 }}
+        >
+          <FaPencilAlt color="white" size={14} /> Editar
+        </Button>
+        <Button variant="danger" onClick={excluir}>
+          <FaTrashAlt color="white" size={14} /> Excluir
+        </Button>
+      </div>
     </Pagina>
   );
 };

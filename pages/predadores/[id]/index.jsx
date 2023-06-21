@@ -24,7 +24,9 @@ const Detalhes = ({ index }) => {
   }, [query.id]);
 
   function excluir() {
-    axios.delete(`/api/predadores/${query.id}`);
+    if (confirm("Você tem certeza?")) {
+      axios.delete(`/api/predadores/${query.id}`);
+    }
     push("/predadores");
   }
 

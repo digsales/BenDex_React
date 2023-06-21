@@ -39,7 +39,9 @@ const Detalhes = ({ index }) => {
   };
 
   function excluir() {
-    axios.delete(`/api/transformacoes/${query.id}`);
+    if (confirm("Você tem certeza?")) {
+      axios.delete(`/api/transformacoes/${query.id}`);
+    }
     push("/transformacoes");
   }
 
